@@ -1,0 +1,2392 @@
+2019-04-06 16:09:30 [scrapy.utils.log] INFO: Scrapy 1.5.2 started (bot: webscraping)
+2019-04-06 16:09:30 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)], pyOpenSSL 18.0.0 (OpenSSL 1.1.1a  20 Nov 2018), cryptography 2.4.2, Platform Windows-10-10.0.17134-SP0
+2019-04-06 16:09:30 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'webscraping', 'FEED_FORMAT': 'csv', 'FEED_URI': 'datosclima_valladolid.csv', 'LOG_FILE': 'datosclima_valladolid.log', 'NEWSPIDER_MODULE': 'webscraping.spiders', 'SPIDER_MODULES': ['webscraping.spiders']}
+2019-04-06 16:09:30 [scrapy.extensions.telnet] INFO: Telnet Password: 9a235d85eeaf462b
+2019-04-06 16:09:30 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2019-04-06 16:09:30 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-04-06 16:09:30 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-04-06 16:09:30 [scrapy.middleware] INFO: Enabled item pipelines:
+['webscraping.pipelines.WebscrapingPipeline']
+2019-04-06 16:09:30 [scrapy.core.engine] INFO: Spider opened
+2019-04-06 16:09:30 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-04-06 16:09:30 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-04-06 16:09:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: None)
+2019-04-06 16:09:31 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID
+2019-04-06 16:09:31 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:31 [webscraping.spiders.datosclima] INFO: idHija: 2503X
+2019-04-06 16:09:31 [webscraping.spiders.datosclima] INFO: idHija: 2422
+2019-04-06 16:09:31 [webscraping.spiders.datosclima] INFO: idHija: 2539
+2019-04-06 16:09:32 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:32 [scrapy.core.scraper] WARNING: Dropped: Item no valido {'dirViento': None,
+ 'fecha': None,
+ 'horaPresMax': None,
+ 'horaPresMin': None,
+ 'horaRachaMax': None,
+ 'horaTempMax': None,
+ 'horaTempMin': None,
+ 'horasSol': None,
+ 'indicativo': '2539',
+ 'precipitacion': None,
+ 'presMax': None,
+ 'presMin': None,
+ 'rachaMax': None,
+ 'tempMax': None,
+ 'tempMin': None,
+ 'velMedia': None}
+{'dirViento': None,
+ 'fecha': None,
+ 'horaPresMax': None,
+ 'horaPresMin': None,
+ 'horaRachaMax': None,
+ 'horaTempMax': None,
+ 'horaTempMin': None,
+ 'horasSol': None,
+ 'indicativo': '2539',
+ 'precipitacion': None,
+ 'presMax': None,
+ 'presMin': None,
+ 'rachaMax': None,
+ 'tempMax': None,
+ 'tempMin': None,
+ 'velMedia': None}
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-01-02 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-01-09 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-01-16 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-01-23 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-01-30 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-02-06 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-02-13 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-02-20 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-02-27 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-03-06 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-03-13 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-03-20 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-03-27 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-04-03 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-04-10 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-04-17 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-04-24 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-05-01 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-05-08 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-05-15 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-05-22 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-05-29 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-06-05 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-06-12 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-06-19 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-06-26 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-07-03 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-07-10 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-07-17 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-07-24 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-07-31 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-08-07 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-08-14 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-08-21 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-08-28 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-09-04 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-09-11 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-09-18 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-09-25 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-10-02 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-10-09 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-10-16 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-10-23 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-10-30 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-11-06 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-11-13 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-11-20 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-11-27 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-12-04 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-12-11 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-12-18 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2018-12-25 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID AEROPUERTO Fecha: 2019-01-01 00:00:00
+2019-04-06 16:09:32 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:32 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:32 [scrapy.core.scraper] WARNING: Dropped: Item no valido {'dirViento': None,
+ 'fecha': None,
+ 'horaPresMax': None,
+ 'horaPresMin': None,
+ 'horaRachaMax': None,
+ 'horaTempMax': None,
+ 'horaTempMin': None,
+ 'horasSol': None,
+ 'indicativo': '2422',
+ 'precipitacion': None,
+ 'presMax': None,
+ 'presMin': None,
+ 'rachaMax': None,
+ 'tempMax': None,
+ 'tempMin': None,
+ 'velMedia': None}
+{'dirViento': None,
+ 'fecha': None,
+ 'horaPresMax': None,
+ 'horaPresMin': None,
+ 'horaRachaMax': None,
+ 'horaTempMax': None,
+ 'horaTempMin': None,
+ 'horasSol': None,
+ 'indicativo': '2422',
+ 'precipitacion': None,
+ 'presMax': None,
+ 'presMin': None,
+ 'rachaMax': None,
+ 'tempMax': None,
+ 'tempMin': None,
+ 'velMedia': None}
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-01-02 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-01-09 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-01-16 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-01-23 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-01-30 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-02-06 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-02-13 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-02-20 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-02-27 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-03-06 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-03-13 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-03-20 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-03-27 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-04-03 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-04-10 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-04-17 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-04-24 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-05-01 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-05-08 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-05-15 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-05-22 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-05-29 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-06-05 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-06-12 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-06-19 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-06-26 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-07-03 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-07-10 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-07-17 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-07-24 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-07-31 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-08-07 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-08-14 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-08-21 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-08-28 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-09-04 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-09-11 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-09-18 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-09-25 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-10-02 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-10-09 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-10-16 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-10-23 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-10-30 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-11-06 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-11-13 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-11-20 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-11-27 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-12-04 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-12-11 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-12-18 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2018-12-25 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Provincia: VALLADOLID Estación: VALLADOLID Fecha: 2019-01-01 00:00:00
+2019-04-06 16:09:32 [webscraping.spiders.datosclima] INFO: Estación: OLMEDO
+2019-04-06 16:09:32 [scrapy.core.scraper] WARNING: Dropped: Item no valido {'dirViento': None,
+ 'fecha': None,
+ 'horaPresMax': None,
+ 'horaPresMin': None,
+ 'horaRachaMax': None,
+ 'horaTempMax': None,
+ 'horaTempMin': None,
+ 'horasSol': None,
+ 'indicativo': '2503X',
+ 'precipitacion': None,
+ 'presMax': None,
+ 'presMin': None,
+ 'rachaMax': None,
+ 'tempMax': None,
+ 'tempMin': None,
+ 'velMedia': None}
+{'dirViento': None,
+ 'fecha': None,
+ 'horaPresMax': None,
+ 'horaPresMin': None,
+ 'horaRachaMax': None,
+ 'horaTempMax': None,
+ 'horaTempMin': None,
+ 'horasSol': None,
+ 'indicativo': '2503X',
+ 'precipitacion': None,
+ 'presMax': None,
+ 'presMin': None,
+ 'rachaMax': None,
+ 'tempMax': None,
+ 'tempMin': None,
+ 'velMedia': None}
+2019-04-06 16:09:34 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:34 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:34 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:34 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:34 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:34 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-02-06 00:00:00
+2019-04-06 16:09:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '04',
+ 'fecha': datetime.datetime(2018, 2, 6, 0, 0),
+ 'horaPresMax': '23',
+ 'horaPresMin': '00',
+ 'horaRachaMax': '00:40',
+ 'horaTempMax': '15:50',
+ 'horaTempMin': '07:10',
+ 'horasSol': '5.8',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '916.4 ',
+ 'presMin': '913.8 ',
+ 'rachaMax': '16.1 ',
+ 'tempMax': '3.5 ',
+ 'tempMin': '-5.4 ',
+ 'velMedia': '3.1 '}
+2019-04-06 16:09:34 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:34 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-03-13 00:00:00
+2019-04-06 16:09:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '25',
+ 'fecha': datetime.datetime(2018, 3, 13, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '04',
+ 'horaRachaMax': '14:40',
+ 'horaTempMax': '13:30',
+ 'horaTempMin': 'Varias',
+ 'horasSol': '2.8',
+ 'indicativo': '2539',
+ 'precipitacion': '1.2 ',
+ 'presMax': '918.1 ',
+ 'presMin': '915.4 ',
+ 'rachaMax': '12.8 ',
+ 'tempMax': '11.8 ',
+ 'tempMin': '4.1 ',
+ 'velMedia': '4.2 '}
+2019-04-06 16:09:34 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:34 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-02-20 00:00:00
+2019-04-06 16:09:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '03',
+ 'fecha': datetime.datetime(2018, 2, 20, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': '24',
+ 'horaRachaMax': '14:05',
+ 'horaTempMax': '14:10',
+ 'horaTempMin': '05:20',
+ 'horasSol': '6.8',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '923.7 ',
+ 'presMin': '920.7 ',
+ 'rachaMax': '10.8 ',
+ 'tempMax': '12.0 ',
+ 'tempMin': '-0.3 ',
+ 'velMedia': '3.9 '}
+2019-04-06 16:09:34 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:35 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:35 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-03-20 00:00:00
+2019-04-06 16:09:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '03',
+ 'fecha': datetime.datetime(2018, 3, 20, 0, 0),
+ 'horaPresMax': '23',
+ 'horaPresMin': '00',
+ 'horaRachaMax': '20:30',
+ 'horaTempMax': '14:10',
+ 'horaTempMin': '01:20',
+ 'horasSol': '5.3',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '927.9 ',
+ 'presMin': '913.2 ',
+ 'rachaMax': '14.4 ',
+ 'tempMax': '7.4 ',
+ 'tempMin': '-1.0 ',
+ 'velMedia': '6.1 '}
+2019-04-06 16:09:35 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:35 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:35 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:35 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-02-13 00:00:00
+2019-04-06 16:09:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '24',
+ 'fecha': datetime.datetime(2018, 2, 13, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': 'Varias',
+ 'horaRachaMax': '13:10',
+ 'horaTempMax': '23:59',
+ 'horaTempMin': '02:10',
+ 'horasSol': '0.0',
+ 'indicativo': '2539',
+ 'precipitacion': '3.3 ',
+ 'presMax': '921.9 ',
+ 'presMin': '917.7 ',
+ 'rachaMax': '17.5 ',
+ 'tempMax': '5.8 ',
+ 'tempMin': '-4.8 ',
+ 'velMedia': '9.2 '}
+2019-04-06 16:09:35 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:35 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:35 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-01-30 00:00:00
+2019-04-06 16:09:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '06',
+ 'fecha': datetime.datetime(2018, 1, 30, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '18',
+ 'horaRachaMax': '00:10',
+ 'horaTempMax': '15:50',
+ 'horaTempMin': '06:00',
+ 'horasSol': '9.0',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '932.6 ',
+ 'presMin': '927.7 ',
+ 'rachaMax': '6.1 ',
+ 'tempMax': '12.5 ',
+ 'tempMin': '-1.8 ',
+ 'velMedia': '1.4 '}
+2019-04-06 16:09:35 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:35 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-03-06 00:00:00
+2019-04-06 16:09:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '27',
+ 'fecha': datetime.datetime(2018, 3, 6, 0, 0),
+ 'horaPresMax': '24',
+ 'horaPresMin': 'Varias',
+ 'horaRachaMax': '12:05',
+ 'horaTempMax': '15:10',
+ 'horaTempMin': '23:59',
+ 'horasSol': '7.2',
+ 'indicativo': '2539',
+ 'precipitacion': '0.2 ',
+ 'presMax': '908.3 ',
+ 'presMin': '901.0 ',
+ 'rachaMax': '16.1 ',
+ 'tempMax': '8.4 ',
+ 'tempMin': '-0.6 ',
+ 'velMedia': '9.2 '}
+2019-04-06 16:09:35 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:35 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-01-09 00:00:00
+2019-04-06 16:09:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '19',
+ 'fecha': datetime.datetime(2018, 1, 9, 0, 0),
+ 'horaPresMax': '24',
+ 'horaPresMin': '16',
+ 'horaRachaMax': '16:20',
+ 'horaTempMax': '23:59',
+ 'horaTempMin': '01:20',
+ 'horasSol': '0.0',
+ 'indicativo': '2539',
+ 'precipitacion': '4.5 ',
+ 'presMax': '917.7 ',
+ 'presMin': '915.7 ',
+ 'rachaMax': '8.3 ',
+ 'tempMax': '2.2 ',
+ 'tempMin': '-6.0 ',
+ 'velMedia': '4.2 '}
+2019-04-06 16:09:35 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:35 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:35 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:35 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-02-27 00:00:00
+2019-04-06 16:09:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '05',
+ 'fecha': datetime.datetime(2018, 2, 27, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '24',
+ 'horaRachaMax': '02:05',
+ 'horaTempMax': '15:50',
+ 'horaTempMin': '06:50',
+ 'horasSol': '4.4',
+ 'indicativo': '2539',
+ 'precipitacion': '18.1 ',
+ 'presMax': '909.4 ',
+ 'presMin': '902.1 ',
+ 'rachaMax': '12.5 ',
+ 'tempMax': '3.4 ',
+ 'tempMin': '-5.9 ',
+ 'velMedia': '4.2 '}
+2019-04-06 16:09:35 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:35 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-01-02 00:00:00
+2019-04-06 16:09:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '26',
+ 'fecha': datetime.datetime(2018, 1, 2, 0, 0),
+ 'horaPresMax': '11',
+ 'horaPresMin': '05',
+ 'horaRachaMax': '12:10',
+ 'horaTempMax': '22:20',
+ 'horaTempMin': '05:10',
+ 'horasSol': '0.0',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '933.5 ',
+ 'presMin': '931.4 ',
+ 'rachaMax': '15.0 ',
+ 'tempMax': '10.4 ',
+ 'tempMin': '4.5 ',
+ 'velMedia': '8.3 '}
+2019-04-06 16:09:36 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:37 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:37 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2019-01-01 00:00:00
+2019-04-06 16:09:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '30',
+ 'fecha': datetime.datetime(2019, 1, 1, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': '05',
+ 'horaRachaMax': '18:00',
+ 'horaTempMax': '14:10',
+ 'horaTempMin': '07:30',
+ 'horasSol': '8.7',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '934.4 ',
+ 'presMin': '932.3 ',
+ 'rachaMax': '5.6 ',
+ 'tempMax': '12.7 ',
+ 'tempMin': '-3.5 ',
+ 'velMedia': '1.7 '}
+2019-04-06 16:09:37 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:37 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:37 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-11-06 00:00:00
+2019-04-06 16:09:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '27',
+ 'fecha': datetime.datetime(2018, 11, 6, 0, 0),
+ 'horaPresMax': '11',
+ 'horaPresMin': '00',
+ 'horaRachaMax': '00:40',
+ 'horaTempMax': '23:10',
+ 'horaTempMin': '03:30',
+ 'horasSol': '0.0',
+ 'indicativo': '2539',
+ 'precipitacion': '3.5 ',
+ 'presMax': '914.7 ',
+ 'presMin': '910.0 ',
+ 'rachaMax': '15.6 ',
+ 'tempMax': '8.9 ',
+ 'tempMin': '3.9 ',
+ 'velMedia': '5.8 '}
+2019-04-06 16:09:37 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:37 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:37 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-10-30 00:00:00
+2019-04-06 16:09:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '22',
+ 'fecha': datetime.datetime(2018, 10, 30, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '15',
+ 'horaRachaMax': '00:50',
+ 'horaTempMax': '14:30',
+ 'horaTempMin': '06:10',
+ 'horasSol': '0.0',
+ 'indicativo': '2539',
+ 'precipitacion': '10.2 ',
+ 'presMax': '905.4 ',
+ 'presMin': '902.1 ',
+ 'rachaMax': '9.7 ',
+ 'tempMax': '8.4 ',
+ 'tempMin': '3.2 ',
+ 'velMedia': '4.2 '}
+2019-04-06 16:09:37 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:37 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:37 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-01-23 00:00:00
+2019-04-06 16:09:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '35',
+ 'fecha': datetime.datetime(2018, 1, 23, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': '24',
+ 'horaRachaMax': '03:20',
+ 'horaTempMax': '16:05',
+ 'horaTempMin': '01:50',
+ 'horasSol': '0.0',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '932.5 ',
+ 'presMin': '930.4 ',
+ 'rachaMax': '4.2 ',
+ 'tempMax': '7.0 ',
+ 'tempMin': '-1.3 ',
+ 'velMedia': '1.4 '}
+2019-04-06 16:09:37 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:37 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:37 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:38 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-01-16 00:00:00
+2019-04-06 16:09:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '26',
+ 'fecha': datetime.datetime(2018, 1, 16, 0, 0),
+ 'horaPresMax': '11',
+ 'horaPresMin': '05',
+ 'horaRachaMax': '16:40',
+ 'horaTempMax': '15:20',
+ 'horaTempMin': '02:40',
+ 'horasSol': '0.0',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '930.1 ',
+ 'presMin': '927.5 ',
+ 'rachaMax': '13.3 ',
+ 'tempMax': '9.7 ',
+ 'tempMin': '2.5 ',
+ 'velMedia': '8.6 '}
+2019-04-06 16:09:38 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:38 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:38 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-12-25 00:00:00
+2019-04-06 16:09:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '06',
+ 'fecha': datetime.datetime(2018, 12, 25, 0, 0),
+ 'horaPresMax': '01',
+ 'horaPresMin': '14',
+ 'horaRachaMax': '11:40',
+ 'horaTempMax': '14:30',
+ 'horaTempMin': '23:59',
+ 'horasSol': '4.0',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '931.3 ',
+ 'presMin': '928.3 ',
+ 'rachaMax': '4.7 ',
+ 'tempMax': '11.2 ',
+ 'tempMin': '-0.6 ',
+ 'velMedia': '2.2 '}
+2019-04-06 16:09:38 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:38 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2019-01-01 00:00:00
+2019-04-06 16:09:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '24',
+ 'fecha': datetime.datetime(2019, 1, 1, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': '15',
+ 'horaRachaMax': '17:00',
+ 'horaTempMax': '14:50',
+ 'horaTempMin': '08:00',
+ 'horasSol': '7.0',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '947.2 ',
+ 'presMin': '945.0 ',
+ 'rachaMax': '3.6 ',
+ 'tempMax': '12.6 ',
+ 'tempMin': '-2.4 ',
+ 'velMedia': '0.8 '}
+2019-04-06 16:09:38 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:39 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:39 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-12-25 00:00:00
+2019-04-06 16:09:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '22',
+ 'fecha': datetime.datetime(2018, 12, 25, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '14',
+ 'horaRachaMax': '16:30',
+ 'horaTempMax': '15:00',
+ 'horaTempMin': '08:10',
+ 'horasSol': '3.1',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '944.0 ',
+ 'presMin': '940.8 ',
+ 'rachaMax': '4.2 ',
+ 'tempMax': '9.9 ',
+ 'tempMin': '2.1 ',
+ 'velMedia': '1.1 '}
+2019-04-06 16:09:39 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:39 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:39 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-12-11 00:00:00
+2019-04-06 16:09:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '23',
+ 'fecha': datetime.datetime(2018, 12, 11, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': 'Varias',
+ 'horaRachaMax': '17:10',
+ 'horaTempMax': '14:00',
+ 'horaTempMin': '08:00',
+ 'horasSol': '3.4',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '940.7 ',
+ 'presMin': '936.5 ',
+ 'rachaMax': '3.3 ',
+ 'tempMax': '9.5 ',
+ 'tempMin': '-0.3 ',
+ 'velMedia': '0.8 '}
+2019-04-06 16:09:39 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:39 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:39 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-11-20 00:00:00
+2019-04-06 16:09:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '26',
+ 'fecha': datetime.datetime(2018, 11, 20, 0, 0),
+ 'horaPresMax': 'Varias',
+ 'horaPresMin': '06',
+ 'horaRachaMax': '12:36',
+ 'horaTempMax': '14:30',
+ 'horaTempMin': '07:50',
+ 'horasSol': '0.9',
+ 'indicativo': '2422',
+ 'precipitacion': '2.8 ',
+ 'presMax': '920.1 ',
+ 'presMin': '914.6 ',
+ 'rachaMax': '11.9 ',
+ 'tempMax': '10.2 ',
+ 'tempMin': '7.3 ',
+ 'velMedia': '3.1 '}
+2019-04-06 16:09:40 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:40 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:40 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:40 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:40 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-11-27 00:00:00
+2019-04-06 16:09:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '22',
+ 'fecha': datetime.datetime(2018, 11, 27, 0, 0),
+ 'horaPresMax': 'Varias',
+ 'horaPresMin': '15',
+ 'horaRachaMax': '13:40',
+ 'horaTempMax': '14:30',
+ 'horaTempMin': '07:30',
+ 'horasSol': '1.0',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '938.8 ',
+ 'presMin': '937.1 ',
+ 'rachaMax': '5.3 ',
+ 'tempMax': '9.6 ',
+ 'tempMin': '1.2 ',
+ 'velMedia': '1.1 '}
+2019-04-06 16:09:40 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:40 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-12-04 00:00:00
+2019-04-06 16:09:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '10',
+ 'fecha': datetime.datetime(2018, 12, 4, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': '15',
+ 'horaRachaMax': '12:40',
+ 'horaTempMax': '14:30',
+ 'horaTempMin': '23:50',
+ 'horasSol': '4.0',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '940.0 ',
+ 'presMin': '937.8 ',
+ 'rachaMax': '2.8 ',
+ 'tempMax': '16.0 ',
+ 'tempMin': '6.3 ',
+ 'velMedia': '0.6 '}
+2019-04-06 16:09:40 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:40 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-12-18 00:00:00
+2019-04-06 16:09:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '22',
+ 'fecha': datetime.datetime(2018, 12, 18, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '16',
+ 'horaRachaMax': '20:30',
+ 'horaTempMax': '17:40',
+ 'horaTempMin': 'Varias',
+ 'horasSol': '0.5',
+ 'indicativo': '2422',
+ 'precipitacion': '0.8 ',
+ 'presMax': '940.0 ',
+ 'presMin': '931.8 ',
+ 'rachaMax': '10.0 ',
+ 'tempMax': '8.8 ',
+ 'tempMin': '-0.5 ',
+ 'velMedia': '1.7 '}
+2019-04-06 16:09:40 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:40 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:40 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-11-06 00:00:00
+2019-04-06 16:09:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '25',
+ 'fecha': datetime.datetime(2018, 11, 6, 0, 0),
+ 'horaPresMax': '11',
+ 'horaPresMin': '00',
+ 'horaRachaMax': '00:10',
+ 'horaTempMax': '22:30',
+ 'horaTempMin': '07:40',
+ 'horasSol': '0.0',
+ 'indicativo': '2422',
+ 'precipitacion': '3.8 ',
+ 'presMax': '927.3 ',
+ 'presMin': '922.7 ',
+ 'rachaMax': '11.7 ',
+ 'tempMax': '10.0 ',
+ 'tempMin': '5.0 ',
+ 'velMedia': '1.7 '}
+2019-04-06 16:09:41 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:41 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:41 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-11-13 00:00:00
+2019-04-06 16:09:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '99',
+ 'fecha': datetime.datetime(2018, 11, 13, 0, 0),
+ 'horaPresMax': '11',
+ 'horaPresMin': 'Varias',
+ 'horaRachaMax': 'Varias',
+ 'horaTempMax': '14:50',
+ 'horaTempMin': '23:59',
+ 'horasSol': '2.2',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '940.4 ',
+ 'presMin': '936.9 ',
+ 'rachaMax': '4.7 ',
+ 'tempMax': '13.4 ',
+ 'tempMin': '7.0 ',
+ 'velMedia': '1.4 '}
+2019-04-06 16:09:42 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:42 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:42 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:42 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:42 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-10-16 00:00:00
+2019-04-06 16:09:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '07',
+ 'fecha': datetime.datetime(2018, 10, 16, 0, 0),
+ 'horaPresMax': '22',
+ 'horaPresMin': '00',
+ 'horaRachaMax': '08:10',
+ 'horaTempMax': '13:30',
+ 'horaTempMin': '04:40',
+ 'horasSol': '7.9',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '934.7 ',
+ 'presMin': '928.5 ',
+ 'rachaMax': '4.7 ',
+ 'tempMax': '19.4 ',
+ 'tempMin': '7.9 ',
+ 'velMedia': '1.4 '}
+2019-04-06 16:09:42 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:42 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-10-23 00:00:00
+2019-04-06 16:09:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '07',
+ 'fecha': datetime.datetime(2018, 10, 23, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': '14',
+ 'horaRachaMax': '09:40',
+ 'horaTempMax': '14:30',
+ 'horaTempMin': '04:30',
+ 'horasSol': '9.8',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '943.0 ',
+ 'presMin': '940.7 ',
+ 'rachaMax': '8.1 ',
+ 'tempMax': '22.3 ',
+ 'tempMin': '7.3 ',
+ 'velMedia': '1.7 '}
+2019-04-06 16:09:42 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:42 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-10-30 00:00:00
+2019-04-06 16:09:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '27',
+ 'fecha': datetime.datetime(2018, 10, 30, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '14',
+ 'horaRachaMax': '01:00',
+ 'horaTempMax': '14:00',
+ 'horaTempMin': '06:00',
+ 'horasSol': '0.0',
+ 'indicativo': '2422',
+ 'precipitacion': '13.0 ',
+ 'presMax': '918.0 ',
+ 'presMin': '914.4 ',
+ 'rachaMax': '7.2 ',
+ 'tempMax': '9.5 ',
+ 'tempMin': '4.1 ',
+ 'velMedia': '1.4 '}
+2019-04-06 16:09:42 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:42 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:42 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-09-25 00:00:00
+2019-04-06 16:09:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '36',
+ 'fecha': datetime.datetime(2018, 9, 25, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '16',
+ 'horaRachaMax': '02:10',
+ 'horaTempMax': '14:50',
+ 'horaTempMin': '05:50',
+ 'horasSol': '11.0',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '941.6 ',
+ 'presMin': '937.9 ',
+ 'rachaMax': '7.2 ',
+ 'tempMax': '25.0 ',
+ 'tempMin': '8.0 ',
+ 'velMedia': '1.4 '}
+2019-04-06 16:09:43 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:43 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:43 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:43 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-10-09 00:00:00
+2019-04-06 16:09:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '12',
+ 'fecha': datetime.datetime(2018, 10, 9, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '24',
+ 'horaRachaMax': '18:50',
+ 'horaTempMax': '15:30',
+ 'horaTempMin': '06:40',
+ 'horasSol': '8.9',
+ 'indicativo': '2422',
+ 'precipitacion': 'Ip ',
+ 'presMax': '931.5 ',
+ 'presMin': '925.7 ',
+ 'rachaMax': '11.4 ',
+ 'tempMax': '21.4 ',
+ 'tempMin': '5.8 ',
+ 'velMedia': '2.5 '}
+2019-04-06 16:09:43 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:43 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:43 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-09-11 00:00:00
+2019-04-06 16:09:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '08',
+ 'fecha': datetime.datetime(2018, 9, 11, 0, 0),
+ 'horaPresMax': '08',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '17:20',
+ 'horaTempMax': '15:10',
+ 'horaTempMin': '06:10',
+ 'horasSol': '11.0',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '940.7 ',
+ 'presMin': '936.2 ',
+ 'rachaMax': '12.2 ',
+ 'tempMax': '30.3 ',
+ 'tempMin': '14.5 ',
+ 'velMedia': '2.5 '}
+2019-04-06 16:09:43 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:43 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:43 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-10-02 00:00:00
+2019-04-06 16:09:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '05',
+ 'fecha': datetime.datetime(2018, 10, 2, 0, 0),
+ 'horaPresMax': '09',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '17:00',
+ 'horaTempMax': '15:40',
+ 'horaTempMin': '06:00',
+ 'horasSol': '10.8',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '941.5 ',
+ 'presMin': '938.5 ',
+ 'rachaMax': '8.6 ',
+ 'tempMax': '22.7 ',
+ 'tempMin': '6.9 ',
+ 'velMedia': '1.4 '}
+2019-04-06 16:09:43 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:43 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-09-18 00:00:00
+2019-04-06 16:09:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '27',
+ 'fecha': datetime.datetime(2018, 9, 18, 0, 0),
+ 'horaPresMax': '24',
+ 'horaPresMin': '03',
+ 'horaRachaMax': '14:03',
+ 'horaTempMax': '13:30',
+ 'horaTempMin': '06:50',
+ 'horasSol': '10.5',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '935.7 ',
+ 'presMin': '931.4 ',
+ 'rachaMax': '8.6 ',
+ 'tempMax': '30.9 ',
+ 'tempMin': '17.4 ',
+ 'velMedia': '1.7 '}
+2019-04-06 16:09:45 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:45 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:45 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:45 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-08-21 00:00:00
+2019-04-06 16:09:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '99',
+ 'fecha': datetime.datetime(2018, 8, 21, 0, 0),
+ 'horaPresMax': '07',
+ 'horaPresMin': 'Varias',
+ 'horaRachaMax': 'Varias',
+ 'horaTempMax': '14:50',
+ 'horaTempMin': '05:50',
+ 'horasSol': '12.2',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '935.0 ',
+ 'presMin': '931.0 ',
+ 'rachaMax': '5.8 ',
+ 'tempMax': '33.1 ',
+ 'tempMin': '15.3 ',
+ 'velMedia': '0.8 '}
+2019-04-06 16:09:45 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:45 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-08-07 00:00:00
+2019-04-06 16:09:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '02',
+ 'fecha': datetime.datetime(2018, 8, 7, 0, 0),
+ 'horaPresMax': '22',
+ 'horaPresMin': '19',
+ 'horaRachaMax': '21:40',
+ 'horaTempMax': '17:00',
+ 'horaTempMin': '06:20',
+ 'horasSol': '11.3',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '931.5 ',
+ 'presMin': '928.3 ',
+ 'rachaMax': '8.9 ',
+ 'tempMax': '30.3 ',
+ 'tempMin': '17.0 ',
+ 'velMedia': '2.8 '}
+2019-04-06 16:09:46 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:46 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:46 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-07-24 00:00:00
+2019-04-06 16:09:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '27',
+ 'fecha': datetime.datetime(2018, 7, 24, 0, 0),
+ 'horaPresMax': '23',
+ 'horaPresMin': '18',
+ 'horaRachaMax': '11:40',
+ 'horaTempMax': '16:30',
+ 'horaTempMin': '05:50',
+ 'horasSol': '12.3',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '931.9 ',
+ 'presMin': '929.4 ',
+ 'rachaMax': '6.1 ',
+ 'tempMax': '33.1 ',
+ 'tempMin': '17.7 ',
+ 'velMedia': '1.9 '}
+2019-04-06 16:09:46 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:46 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:46 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:46 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:46 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:46 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:46 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-07-31 00:00:00
+2019-04-06 16:09:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '03',
+ 'fecha': datetime.datetime(2018, 7, 31, 0, 0),
+ 'horaPresMax': 'Varias',
+ 'horaPresMin': '18',
+ 'horaRachaMax': '22:00',
+ 'horaTempMax': '16:40',
+ 'horaTempMin': '05:40',
+ 'horasSol': '12.1',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '935.1 ',
+ 'presMin': '931.7 ',
+ 'rachaMax': '7.8 ',
+ 'tempMax': '33.3 ',
+ 'tempMin': '16.8 ',
+ 'velMedia': '1.4 '}
+2019-04-06 16:09:47 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:47 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-07-17 00:00:00
+2019-04-06 16:09:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '36',
+ 'fecha': datetime.datetime(2018, 7, 17, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '24',
+ 'horaRachaMax': '23:20',
+ 'horaTempMax': '17:20',
+ 'horaTempMin': '05:10',
+ 'horasSol': '11.8',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '935.7 ',
+ 'presMin': '929.7 ',
+ 'rachaMax': '7.5 ',
+ 'tempMax': '31.4 ',
+ 'tempMin': '13.9 ',
+ 'velMedia': '1.4 '}
+2019-04-06 16:09:47 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:47 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-07-10 00:00:00
+2019-04-06 16:09:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '06',
+ 'fecha': datetime.datetime(2018, 7, 10, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': 'Varias',
+ 'horaRachaMax': 'Varias',
+ 'horaTempMax': '15:00',
+ 'horaTempMin': '05:30',
+ 'horasSol': '12.2',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '936.7 ',
+ 'presMin': '932.5 ',
+ 'rachaMax': '7.2 ',
+ 'tempMax': '31.2 ',
+ 'tempMin': '15.9 ',
+ 'velMedia': '1.4 '}
+2019-04-06 16:09:47 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:47 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-08-14 00:00:00
+2019-04-06 16:09:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '05',
+ 'fecha': datetime.datetime(2018, 8, 14, 0, 0),
+ 'horaPresMax': 'Varias',
+ 'horaPresMin': '00',
+ 'horaRachaMax': '20:40',
+ 'horaTempMax': '14:55',
+ 'horaTempMin': '05:20',
+ 'horasSol': '12.2',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '936.9 ',
+ 'presMin': '934.3 ',
+ 'rachaMax': '8.1 ',
+ 'tempMax': '28.7 ',
+ 'tempMin': '15.0 ',
+ 'velMedia': '2.2 '}
+2019-04-06 16:09:47 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:47 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-09-04 00:00:00
+2019-04-06 16:09:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '22',
+ 'fecha': datetime.datetime(2018, 9, 4, 0, 0),
+ 'horaPresMax': '23',
+ 'horaPresMin': '16',
+ 'horaRachaMax': '14:02',
+ 'horaTempMax': '14:50',
+ 'horaTempMin': '06:00',
+ 'horasSol': '11.6',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '930.3 ',
+ 'presMin': '927.7 ',
+ 'rachaMax': '6.4 ',
+ 'tempMax': '28.4 ',
+ 'tempMin': '13.4 ',
+ 'velMedia': '1.7 '}
+2019-04-06 16:09:47 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:47 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:47 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-08-28 00:00:00
+2019-04-06 16:09:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '24',
+ 'fecha': datetime.datetime(2018, 8, 28, 0, 0),
+ 'horaPresMax': '24',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '12:30',
+ 'horaTempMax': '14:50',
+ 'horaTempMin': '06:00',
+ 'horasSol': '11.3',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '933.0 ',
+ 'presMin': '929.8 ',
+ 'rachaMax': '11.7 ',
+ 'tempMax': '32.2 ',
+ 'tempMin': '17.1 ',
+ 'velMedia': '2.5 '}
+2019-04-06 16:09:48 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:48 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:48 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-07-03 00:00:00
+2019-04-06 16:09:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '28',
+ 'fecha': datetime.datetime(2018, 7, 3, 0, 0),
+ 'horaPresMax': '08',
+ 'horaPresMin': '18',
+ 'horaRachaMax': '15:05',
+ 'horaTempMax': '16:50',
+ 'horaTempMin': '03:40',
+ 'horasSol': '11.7',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '934.6 ',
+ 'presMin': '931.1 ',
+ 'rachaMax': '6.7 ',
+ 'tempMax': '28.5 ',
+ 'tempMin': '14.8 ',
+ 'velMedia': '1.9 '}
+2019-04-06 16:09:48 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:48 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:48 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-06-26 00:00:00
+2019-04-06 16:09:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '09',
+ 'fecha': datetime.datetime(2018, 6, 26, 0, 0),
+ 'horaPresMax': '23',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '18:00',
+ 'horaTempMax': '14:00',
+ 'horaTempMin': '05:10',
+ 'horasSol': '8.6',
+ 'indicativo': '2422',
+ 'precipitacion': '0.2 ',
+ 'presMax': '933.8 ',
+ 'presMin': '930.1 ',
+ 'rachaMax': '8.3 ',
+ 'tempMax': '33.6 ',
+ 'tempMin': '17.7 ',
+ 'velMedia': '1.7 '}
+2019-04-06 16:09:49 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:49 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:49 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:49 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:49 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-05-15 00:00:00
+2019-04-06 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '02',
+ 'fecha': datetime.datetime(2018, 5, 15, 0, 0),
+ 'horaPresMax': '06',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '18:30',
+ 'horaTempMax': '16:20',
+ 'horaTempMin': '04:00',
+ 'horasSol': '12.7',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '937.5 ',
+ 'presMin': '932.8 ',
+ 'rachaMax': '8.3 ',
+ 'tempMax': '21.3 ',
+ 'tempMin': '4.3 ',
+ 'velMedia': '2.2 '}
+2019-04-06 16:09:49 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:49 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-06-19 00:00:00
+2019-04-06 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '01',
+ 'fecha': datetime.datetime(2018, 6, 19, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '19',
+ 'horaRachaMax': '06:11',
+ 'horaTempMax': '15:30',
+ 'horaTempMin': '04:50',
+ 'horasSol': '13.5',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '938.4 ',
+ 'presMin': '933.7 ',
+ 'rachaMax': '6.7 ',
+ 'tempMax': '29.8 ',
+ 'tempMin': '12.9 ',
+ 'velMedia': '1.7 '}
+2019-04-06 16:09:49 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:49 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-06-12 00:00:00
+2019-04-06 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '34',
+ 'fecha': datetime.datetime(2018, 6, 12, 0, 0),
+ 'horaPresMax': '24',
+ 'horaPresMin': '04',
+ 'horaRachaMax': '13:10',
+ 'horaTempMax': '16:50',
+ 'horaTempMin': '01:50',
+ 'horasSol': '7.4',
+ 'indicativo': '2422',
+ 'precipitacion': 'Ip ',
+ 'presMax': '936.3 ',
+ 'presMin': '930.8 ',
+ 'rachaMax': '8.1 ',
+ 'tempMax': '22.1 ',
+ 'tempMin': '10.6 ',
+ 'velMedia': '2.5 '}
+2019-04-06 16:09:49 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:49 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:49 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:49 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-06-05 00:00:00
+2019-04-06 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '30',
+ 'fecha': datetime.datetime(2018, 6, 5, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '16',
+ 'horaRachaMax': '12:50',
+ 'horaTempMax': '12:10',
+ 'horaTempMin': '02:00',
+ 'horasSol': '3.2',
+ 'indicativo': '2422',
+ 'precipitacion': '10.2 ',
+ 'presMax': '929.9 ',
+ 'presMin': '928.4 ',
+ 'rachaMax': '8.1 ',
+ 'tempMax': '16.2 ',
+ 'tempMin': '9.4 ',
+ 'velMedia': '2.5 '}
+2019-04-06 16:09:49 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:49 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-05-22 00:00:00
+2019-04-06 16:09:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '32',
+ 'fecha': datetime.datetime(2018, 5, 22, 0, 0),
+ 'horaPresMax': '24',
+ 'horaPresMin': '02',
+ 'horaRachaMax': '14:34',
+ 'horaTempMax': '13:50',
+ 'horaTempMin': '04:50',
+ 'horasSol': '8.8',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '931.8 ',
+ 'presMin': '928.5 ',
+ 'rachaMax': '6.9 ',
+ 'tempMax': '24.4 ',
+ 'tempMin': '11.5 ',
+ 'velMedia': '1.1 '}
+2019-04-06 16:09:49 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:50 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:50 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-05-29 00:00:00
+2019-04-06 16:09:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '26',
+ 'fecha': datetime.datetime(2018, 5, 29, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': '18',
+ 'horaRachaMax': '16:20',
+ 'horaTempMax': '15:20',
+ 'horaTempMin': '01:20',
+ 'horasSol': '6.0',
+ 'indicativo': '2422',
+ 'precipitacion': '0.2 ',
+ 'presMax': '930.4 ',
+ 'presMin': '927.8 ',
+ 'rachaMax': '7.5 ',
+ 'tempMax': '20.7 ',
+ 'tempMin': '11.4 ',
+ 'velMedia': '1.9 '}
+2019-04-06 16:09:51 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:51 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:51 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:51 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-05-08 00:00:00
+2019-04-06 16:09:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '36',
+ 'fecha': datetime.datetime(2018, 5, 8, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '18:00',
+ 'horaTempMax': '14:20',
+ 'horaTempMin': '05:10',
+ 'horasSol': '10.9',
+ 'indicativo': '2422',
+ 'precipitacion': 'Ip ',
+ 'presMax': '931.0 ',
+ 'presMin': '927.3 ',
+ 'rachaMax': '8.1 ',
+ 'tempMax': '25.3 ',
+ 'tempMin': '12.0 ',
+ 'velMedia': '1.9 '}
+2019-04-06 16:09:51 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:51 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-05-01 00:00:00
+2019-04-06 16:09:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '27',
+ 'fecha': datetime.datetime(2018, 5, 1, 0, 0),
+ 'horaPresMax': 'Varias',
+ 'horaPresMin': '18',
+ 'horaRachaMax': 'Varias',
+ 'horaTempMax': '15:50',
+ 'horaTempMin': '05:40',
+ 'horasSol': '11.0',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '932.3 ',
+ 'presMin': '929.3 ',
+ 'rachaMax': '5.8 ',
+ 'tempMax': '14.9 ',
+ 'tempMin': '2.1 ',
+ 'velMedia': '1.9 '}
+2019-04-06 16:09:51 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:51 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:51 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-04-17 00:00:00
+2019-04-06 16:09:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '21',
+ 'fecha': datetime.datetime(2018, 4, 17, 0, 0),
+ 'horaPresMax': '09',
+ 'horaPresMin': '00',
+ 'horaRachaMax': '12:40',
+ 'horaTempMax': '15:40',
+ 'horaTempMin': '06:00',
+ 'horasSol': '12.2',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '939.8 ',
+ 'presMin': '937.0 ',
+ 'rachaMax': '3.9 ',
+ 'tempMax': '21.5 ',
+ 'tempMin': '4.7 ',
+ 'velMedia': '1.1 '}
+2019-04-06 16:09:51 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:51 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:52 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:52 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-04-24 00:00:00
+2019-04-06 16:09:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '14',
+ 'fecha': datetime.datetime(2018, 4, 24, 0, 0),
+ 'horaPresMax': '08',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '19:10',
+ 'horaTempMax': '14:50',
+ 'horaTempMin': 'Varias',
+ 'horasSol': '11.0',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '934.3 ',
+ 'presMin': '931.4 ',
+ 'rachaMax': '8.9 ',
+ 'tempMax': '25.9 ',
+ 'tempMin': '10.8 ',
+ 'velMedia': '1.4 '}
+2019-04-06 16:09:52 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:52 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-04-03 00:00:00
+2019-04-06 16:09:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '27',
+ 'fecha': datetime.datetime(2018, 4, 3, 0, 0),
+ 'horaPresMax': '24',
+ 'horaPresMin': '16',
+ 'horaRachaMax': '16:00',
+ 'horaTempMax': '13:40',
+ 'horaTempMin': '23:30',
+ 'horasSol': '5.8',
+ 'indicativo': '2422',
+ 'precipitacion': '5.6 ',
+ 'presMax': '922.6 ',
+ 'presMin': '919.1 ',
+ 'rachaMax': '14.7 ',
+ 'tempMax': '14.5 ',
+ 'tempMin': '7.0 ',
+ 'velMedia': '3.1 '}
+2019-04-06 16:09:52 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:52 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:52 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-04-10 00:00:00
+2019-04-06 16:09:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '21',
+ 'fecha': datetime.datetime(2018, 4, 10, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': 'Varias',
+ 'horaRachaMax': '07:20',
+ 'horaTempMax': '12:00',
+ 'horaTempMin': '20:40',
+ 'horasSol': '2.3',
+ 'indicativo': '2422',
+ 'precipitacion': '7.6 ',
+ 'presMax': '921.2 ',
+ 'presMin': '910.1 ',
+ 'rachaMax': '10.8 ',
+ 'tempMax': '7.9 ',
+ 'tempMin': '3.0 ',
+ 'velMedia': '1.7 '}
+2019-04-06 16:09:52 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:52 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:52 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:52 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-03-20 00:00:00
+2019-04-06 16:09:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '32',
+ 'fecha': datetime.datetime(2018, 3, 20, 0, 0),
+ 'horaPresMax': '24',
+ 'horaPresMin': 'Varias',
+ 'horaRachaMax': '06:30',
+ 'horaTempMax': '15:00',
+ 'horaTempMin': '07:10',
+ 'horasSol': '6.1',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '940.6 ',
+ 'presMin': '926.2 ',
+ 'rachaMax': '10.0 ',
+ 'tempMax': '8.9 ',
+ 'tempMin': '0.1 ',
+ 'velMedia': '2.8 '}
+2019-04-06 16:09:52 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:52 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-03-27 00:00:00
+2019-04-06 16:09:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '31',
+ 'fecha': datetime.datetime(2018, 3, 27, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': '24',
+ 'horaRachaMax': '15:52',
+ 'horaTempMax': '15:50',
+ 'horaTempMin': '06:10',
+ 'horasSol': '11.5',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '941.7 ',
+ 'presMin': '938.1 ',
+ 'rachaMax': '11.4 ',
+ 'tempMax': '19.4 ',
+ 'tempMin': '4.5 ',
+ 'velMedia': '2.8 '}
+2019-04-06 16:09:54 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:54 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:54 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-02-20 00:00:00
+2019-04-06 16:09:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '05',
+ 'fecha': datetime.datetime(2018, 2, 20, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': '24',
+ 'horaRachaMax': '18:00',
+ 'horaTempMax': '13:50',
+ 'horaTempMin': '23:59',
+ 'horasSol': '7.9',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '936.3 ',
+ 'presMin': '933.2 ',
+ 'rachaMax': '8.6 ',
+ 'tempMax': '13.1 ',
+ 'tempMin': '3.3 ',
+ 'velMedia': '1.9 '}
+2019-04-06 16:09:55 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:55 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:55 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-01-23 00:00:00
+2019-04-06 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '08',
+ 'fecha': datetime.datetime(2018, 1, 23, 0, 0),
+ 'horaPresMax': 'Varias',
+ 'horaPresMin': '24',
+ 'horaRachaMax': '18:10',
+ 'horaTempMax': '16:00',
+ 'horaTempMin': '02:40',
+ 'horasSol': '0.0',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '945.2 ',
+ 'presMin': '943.2 ',
+ 'rachaMax': '3.3 ',
+ 'tempMax': '7.4 ',
+ 'tempMin': '2.3 ',
+ 'velMedia': '0.8 '}
+2019-04-06 16:09:55 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:55 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:55 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:55 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-03-06 00:00:00
+2019-04-06 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '26',
+ 'fecha': datetime.datetime(2018, 3, 6, 0, 0),
+ 'horaPresMax': '24',
+ 'horaPresMin': '07',
+ 'horaRachaMax': '15:30',
+ 'horaTempMax': '13:30',
+ 'horaTempMin': '23:50',
+ 'horasSol': '7.0',
+ 'indicativo': '2422',
+ 'precipitacion': 'Ip ',
+ 'presMax': '920.8 ',
+ 'presMin': '913.7 ',
+ 'rachaMax': '13.3 ',
+ 'tempMax': '10.1 ',
+ 'tempMin': '1.7 ',
+ 'velMedia': '4.4 '}
+2019-04-06 16:09:55 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:55 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-01-09 00:00:00
+2019-04-06 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '19',
+ 'fecha': datetime.datetime(2018, 1, 9, 0, 0),
+ 'horaPresMax': 'Varias',
+ 'horaPresMin': 'Varias',
+ 'horaRachaMax': '16:00',
+ 'horaTempMax': '23:50',
+ 'horaTempMin': '05:50',
+ 'horasSol': '0.0',
+ 'indicativo': '2422',
+ 'precipitacion': '3.6 ',
+ 'presMax': '930.5 ',
+ 'presMin': '928.6 ',
+ 'rachaMax': '6.4 ',
+ 'tempMax': '2.8 ',
+ 'tempMin': '-4.5 ',
+ 'velMedia': '1.9 '}
+2019-04-06 16:09:55 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:55 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:55 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:55 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:55 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-02-13 00:00:00
+2019-04-06 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '23',
+ 'fecha': datetime.datetime(2018, 2, 13, 0, 0),
+ 'horaPresMax': 'Varias',
+ 'horaPresMin': '14',
+ 'horaRachaMax': '12:40',
+ 'horaTempMax': '23:59',
+ 'horaTempMin': '05:20',
+ 'horasSol': '0.0',
+ 'indicativo': '2422',
+ 'precipitacion': '4.0 ',
+ 'presMax': '934.6 ',
+ 'presMin': '930.4 ',
+ 'rachaMax': '14.2 ',
+ 'tempMax': '6.8 ',
+ 'tempMin': '-2.9 ',
+ 'velMedia': '4.2 '}
+2019-04-06 16:09:55 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:55 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-02-06 00:00:00
+2019-04-06 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '03',
+ 'fecha': datetime.datetime(2018, 2, 6, 0, 0),
+ 'horaPresMax': 'Varias',
+ 'horaPresMin': '00',
+ 'horaRachaMax': '11:50',
+ 'horaTempMax': '15:20',
+ 'horaTempMin': '07:20',
+ 'horasSol': '5.7',
+ 'indicativo': '2422',
+ 'precipitacion': 'Ip ',
+ 'presMax': '929.2 ',
+ 'presMin': '926.4 ',
+ 'rachaMax': '7.8 ',
+ 'tempMax': '4.8 ',
+ 'tempMin': '-2.1 ',
+ 'velMedia': '1.4 '}
+2019-04-06 16:09:55 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:55 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:55 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-01-02 00:00:00
+2019-04-06 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '25',
+ 'fecha': datetime.datetime(2018, 1, 2, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': '05',
+ 'horaRachaMax': '13:40',
+ 'horaTempMax': '23:00',
+ 'horaTempMin': '05:50',
+ 'horasSol': '0.4',
+ 'indicativo': '2422',
+ 'precipitacion': 'Ip ',
+ 'presMax': '946.3 ',
+ 'presMin': '944.2 ',
+ 'rachaMax': '10.3 ',
+ 'tempMax': '11.1 ',
+ 'tempMin': '5.8 ',
+ 'velMedia': '2.5 '}
+2019-04-06 16:09:55 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:55 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-01-16 00:00:00
+2019-04-06 16:09:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '26',
+ 'fecha': datetime.datetime(2018, 1, 16, 0, 0),
+ 'horaPresMax': '11',
+ 'horaPresMin': '18',
+ 'horaRachaMax': '16:30',
+ 'horaTempMax': '16:00',
+ 'horaTempMin': '02:40',
+ 'horasSol': '0.4',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '943.0 ',
+ 'presMin': '940.1 ',
+ 'rachaMax': '10.3 ',
+ 'tempMax': '10.9 ',
+ 'tempMin': '4.5 ',
+ 'velMedia': '3.1 '}
+2019-04-06 16:09:57 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:57 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:57 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:57 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:57 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-03-13 00:00:00
+2019-04-06 16:09:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '28',
+ 'fecha': datetime.datetime(2018, 3, 13, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '04',
+ 'horaRachaMax': '12:30',
+ 'horaTempMax': '14:30',
+ 'horaTempMin': '03:10',
+ 'horasSol': '2.3',
+ 'indicativo': '2422',
+ 'precipitacion': '1.0 ',
+ 'presMax': '930.7 ',
+ 'presMin': '927.8 ',
+ 'rachaMax': '10.3 ',
+ 'tempMax': '13.3 ',
+ 'tempMin': '5.0 ',
+ 'velMedia': '2.8 '}
+2019-04-06 16:09:57 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:57 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-02-27 00:00:00
+2019-04-06 16:09:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '04',
+ 'fecha': datetime.datetime(2018, 2, 27, 0, 0),
+ 'horaPresMax': '01',
+ 'horaPresMin': '24',
+ 'horaRachaMax': '06:20',
+ 'horaTempMax': '15:30',
+ 'horaTempMin': '07:10',
+ 'horasSol': '4.4',
+ 'indicativo': '2422',
+ 'precipitacion': '24.0 ',
+ 'presMax': '922.1 ',
+ 'presMin': '914.9 ',
+ 'rachaMax': '8.1 ',
+ 'tempMax': '4.8 ',
+ 'tempMin': '-4.5 ',
+ 'velMedia': '1.4 '}
+2019-04-06 16:09:57 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID
+2019-04-06 16:09:57 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2422 en fecha: 2018-01-30 00:00:00
+2019-04-06 16:09:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '03',
+ 'fecha': datetime.datetime(2018, 1, 30, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '01:00',
+ 'horaTempMax': '15:10',
+ 'horaTempMin': '07:50',
+ 'horasSol': '8.3',
+ 'indicativo': '2422',
+ 'precipitacion': '0.0 ',
+ 'presMax': '945.3 ',
+ 'presMin': '940.1 ',
+ 'rachaMax': '3.6 ',
+ 'tempMax': '13.6 ',
+ 'tempMin': '-0.6 ',
+ 'velMedia': '0.8 '}
+2019-04-06 16:09:58 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:58 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:58 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-12-04 00:00:00
+2019-04-06 16:09:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '10',
+ 'fecha': datetime.datetime(2018, 12, 4, 0, 0),
+ 'horaPresMax': '11',
+ 'horaPresMin': '15',
+ 'horaRachaMax': '10:00',
+ 'horaTempMax': '14:50',
+ 'horaTempMin': '23:59',
+ 'horasSol': '3.8',
+ 'indicativo': '2539',
+ 'precipitacion': '0.4 ',
+ 'presMax': '927.5 ',
+ 'presMin': '925.7 ',
+ 'rachaMax': '4.7 ',
+ 'tempMax': '14.3 ',
+ 'tempMin': '3.6 ',
+ 'velMedia': '1.1 '}
+2019-04-06 16:09:58 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:58 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:58 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:58 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:58 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-12-18 00:00:00
+2019-04-06 16:09:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '21',
+ 'fecha': datetime.datetime(2018, 12, 18, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '15',
+ 'horaRachaMax': '14:50',
+ 'horaTempMax': '15:50',
+ 'horaTempMin': '00:30',
+ 'horasSol': '0.7',
+ 'indicativo': '2539',
+ 'precipitacion': '0.8 ',
+ 'presMax': '927.1 ',
+ 'presMin': '919.1 ',
+ 'rachaMax': '15.6 ',
+ 'tempMax': '8.2 ',
+ 'tempMin': '-2.1 ',
+ 'velMedia': '4.7 '}
+2019-04-06 16:09:58 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:58 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:58 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-12-11 00:00:00
+2019-04-06 16:09:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '28',
+ 'fecha': datetime.datetime(2018, 12, 11, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '14',
+ 'horaRachaMax': '17:30',
+ 'horaTempMax': '13:05',
+ 'horaTempMin': '07:30',
+ 'horasSol': '3.4',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '928.2 ',
+ 'presMin': '923.9 ',
+ 'rachaMax': '5.3 ',
+ 'tempMax': '10.8 ',
+ 'tempMin': '-1.8 ',
+ 'velMedia': '1.7 '}
+2019-04-06 16:09:58 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:58 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-11-27 00:00:00
+2019-04-06 16:09:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '24',
+ 'fecha': datetime.datetime(2018, 11, 27, 0, 0),
+ 'horaPresMax': '11',
+ 'horaPresMin': 'Varias',
+ 'horaRachaMax': '12:30',
+ 'horaTempMax': '14:20',
+ 'horaTempMin': 'Varias',
+ 'horasSol': '1.4',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '926.2 ',
+ 'presMin': '924.6 ',
+ 'rachaMax': '5.6 ',
+ 'tempMax': '8.9 ',
+ 'tempMin': '0.0 ',
+ 'velMedia': '2.5 '}
+2019-04-06 16:09:58 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:58 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-11-20 00:00:00
+2019-04-06 16:09:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '26',
+ 'fecha': datetime.datetime(2018, 11, 20, 0, 0),
+ 'horaPresMax': '24',
+ 'horaPresMin': '05',
+ 'horaRachaMax': '14:10',
+ 'horaTempMax': '14:20',
+ 'horaTempMin': '07:30',
+ 'horasSol': '1.2',
+ 'indicativo': '2539',
+ 'precipitacion': '6.0 ',
+ 'presMax': '907.6 ',
+ 'presMin': '902.3 ',
+ 'rachaMax': '13.9 ',
+ 'tempMax': '9.7 ',
+ 'tempMin': '5.9 ',
+ 'velMedia': '6.1 '}
+2019-04-06 16:09:59 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:59 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:59 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-10-16 00:00:00
+2019-04-06 16:09:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '35',
+ 'fecha': datetime.datetime(2018, 10, 16, 0, 0),
+ 'horaPresMax': '23',
+ 'horaPresMin': '01',
+ 'horaRachaMax': '10:20',
+ 'horaTempMax': '14:50',
+ 'horaTempMin': '02:05',
+ 'horasSol': '8.7',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '922.4 ',
+ 'presMin': '916.2 ',
+ 'rachaMax': '7.2 ',
+ 'tempMax': '17.9 ',
+ 'tempMin': '5.0 ',
+ 'velMedia': '1.9 '}
+2019-04-06 16:09:59 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:09:59 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:09:59 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-11-13 00:00:00
+2019-04-06 16:09:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '05',
+ 'fecha': datetime.datetime(2018, 11, 13, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': '01',
+ 'horaRachaMax': '08:10',
+ 'horaTempMax': '15:05',
+ 'horaTempMin': '23:50',
+ 'horasSol': '2.5',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '928.0 ',
+ 'presMin': '924.5 ',
+ 'rachaMax': '8.3 ',
+ 'tempMax': '12.7 ',
+ 'tempMin': '5.1 ',
+ 'velMedia': '2.5 '}
+2019-04-06 16:09:59 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:00 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:00 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-10-23 00:00:00
+2019-04-06 16:10:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '05',
+ 'fecha': datetime.datetime(2018, 10, 23, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': '03',
+ 'horaRachaMax': '01:10',
+ 'horaTempMax': '15:05',
+ 'horaTempMin': '23:50',
+ 'horasSol': '10.0',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '930.6 ',
+ 'presMin': '928.5 ',
+ 'rachaMax': '13.9 ',
+ 'tempMax': '19.9 ',
+ 'tempMin': '5.3 ',
+ 'velMedia': '4.7 '}
+2019-04-06 16:10:02 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:02 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:02 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:02 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-08-28 00:00:00
+2019-04-06 16:10:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '22',
+ 'fecha': datetime.datetime(2018, 8, 28, 0, 0),
+ 'horaPresMax': '24',
+ 'horaPresMin': 'Varias',
+ 'horaRachaMax': '14:20',
+ 'horaTempMax': '14:40',
+ 'horaTempMin': '04:10',
+ 'horasSol': '11.3',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '921.2 ',
+ 'presMin': '918.2 ',
+ 'rachaMax': '12.8 ',
+ 'tempMax': '30.5 ',
+ 'tempMin': '14.9 ',
+ 'velMedia': '5.0 '}
+2019-04-06 16:10:02 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:02 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-09-25 00:00:00
+2019-04-06 16:10:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '24',
+ 'fecha': datetime.datetime(2018, 9, 25, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': 'Varias',
+ 'horaRachaMax': '04:01',
+ 'horaTempMax': '15:10',
+ 'horaTempMin': '03:30',
+ 'horasSol': '9.8',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '929.2 ',
+ 'presMin': '926.0 ',
+ 'rachaMax': '12.5 ',
+ 'tempMax': '23.8 ',
+ 'tempMin': '7.5 ',
+ 'velMedia': '4.4 '}
+2019-04-06 16:10:02 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:02 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:02 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-09-11 00:00:00
+2019-04-06 16:10:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '10',
+ 'fecha': datetime.datetime(2018, 9, 11, 0, 0),
+ 'horaPresMax': 'Varias',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '18:20',
+ 'horaTempMax': '14:40',
+ 'horaTempMin': '04:50',
+ 'horasSol': '9.9',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '928.6 ',
+ 'presMin': '924.7 ',
+ 'rachaMax': '14.4 ',
+ 'tempMax': '28.5 ',
+ 'tempMin': '12.7 ',
+ 'velMedia': '4.2 '}
+2019-04-06 16:10:02 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:02 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:02 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-10-09 00:00:00
+2019-04-06 16:10:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '11',
+ 'fecha': datetime.datetime(2018, 10, 9, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '24',
+ 'horaRachaMax': '17:30',
+ 'horaTempMax': '16:00',
+ 'horaTempMin': '05:20',
+ 'horasSol': '8.6',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '919.1 ',
+ 'presMin': '913.5 ',
+ 'rachaMax': '12.8 ',
+ 'tempMax': '19.1 ',
+ 'tempMin': '4.5 ',
+ 'velMedia': '2.8 '}
+2019-04-06 16:10:04 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:04 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:04 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:04 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:04 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:04 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-09-04 00:00:00
+2019-04-06 16:10:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '03',
+ 'fecha': datetime.datetime(2018, 9, 4, 0, 0),
+ 'horaPresMax': 'Varias',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '00:20',
+ 'horaTempMax': '14:50',
+ 'horaTempMin': '05:00',
+ 'horasSol': '10.0',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '918.5 ',
+ 'presMin': '916.1 ',
+ 'rachaMax': '11.4 ',
+ 'tempMax': '26.3 ',
+ 'tempMin': '10.7 ',
+ 'velMedia': '2.5 '}
+2019-04-06 16:10:04 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:04 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-10-02 00:00:00
+2019-04-06 16:10:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '04',
+ 'fecha': datetime.datetime(2018, 10, 2, 0, 0),
+ 'horaPresMax': '09',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '09:20',
+ 'horaTempMax': '15:10',
+ 'horaTempMin': '06:30',
+ 'horasSol': '9.7',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '929.0 ',
+ 'presMin': '926.4 ',
+ 'rachaMax': '10.8 ',
+ 'tempMax': '21.3 ',
+ 'tempMin': '4.3 ',
+ 'velMedia': '5.0 '}
+2019-04-06 16:10:04 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:04 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-09-18 00:00:00
+2019-04-06 16:10:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '24',
+ 'fecha': datetime.datetime(2018, 9, 18, 0, 0),
+ 'horaPresMax': '23',
+ 'horaPresMin': '02',
+ 'horaRachaMax': '13:30',
+ 'horaTempMax': '15:05',
+ 'horaTempMin': '05:50',
+ 'horasSol': '9.1',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '923.6 ',
+ 'presMin': '919.7 ',
+ 'rachaMax': '10.3 ',
+ 'tempMax': '28.5 ',
+ 'tempMin': '14.2 ',
+ 'velMedia': '3.6 '}
+2019-04-06 16:10:05 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:05 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-08-21 00:00:00
+2019-04-06 16:10:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '06',
+ 'fecha': datetime.datetime(2018, 8, 21, 0, 0),
+ 'horaPresMax': 'Varias',
+ 'horaPresMin': '18',
+ 'horaRachaMax': '00:30',
+ 'horaTempMax': '14:40',
+ 'horaTempMin': '06:00',
+ 'horasSol': '12.5',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '923.0 ',
+ 'presMin': '919.6 ',
+ 'rachaMax': '12.5 ',
+ 'tempMax': '31.3 ',
+ 'tempMin': '12.8 ',
+ 'velMedia': '2.2 '}
+2019-04-06 16:10:05 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:05 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:05 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:05 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-08-14 00:00:00
+2019-04-06 16:10:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '07',
+ 'fecha': datetime.datetime(2018, 8, 14, 0, 0),
+ 'horaPresMax': None,
+ 'horaPresMin': None,
+ 'horaRachaMax': '16:40',
+ 'horaTempMax': '15:50',
+ 'horaTempMin': '05:30',
+ 'horasSol': '13.0',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': ' ',
+ 'presMin': ' ',
+ 'rachaMax': '11.4 ',
+ 'tempMax': '26.7 ',
+ 'tempMin': '13.4 ',
+ 'velMedia': '6.4 '}
+2019-04-06 16:10:05 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:05 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-07-24 00:00:00
+2019-04-06 16:10:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '19',
+ 'fecha': datetime.datetime(2018, 7, 24, 0, 0),
+ 'horaPresMax': '23',
+ 'horaPresMin': 'Varias',
+ 'horaRachaMax': '14:30',
+ 'horaTempMax': '15:10',
+ 'horaTempMin': '05:20',
+ 'horasSol': '13.6',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '920.2 ',
+ 'presMin': '917.9 ',
+ 'rachaMax': '8.3 ',
+ 'tempMax': '30.7 ',
+ 'tempMin': '15.0 ',
+ 'velMedia': '2.8 '}
+2019-04-06 16:10:06 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:06 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:06 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:06 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-08-07 00:00:00
+2019-04-06 16:10:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '05',
+ 'fecha': datetime.datetime(2018, 8, 7, 0, 0),
+ 'horaPresMax': '23',
+ 'horaPresMin': '19',
+ 'horaRachaMax': '21:20',
+ 'horaTempMax': '16:50',
+ 'horaTempMin': '06:20',
+ 'horasSol': '12.5',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '919.6 ',
+ 'presMin': '916.8 ',
+ 'rachaMax': '11.4 ',
+ 'tempMax': '27.8 ',
+ 'tempMin': '14.2 ',
+ 'velMedia': '4.4 '}
+2019-04-06 16:10:06 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:06 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-07-31 00:00:00
+2019-04-06 16:10:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '04',
+ 'fecha': datetime.datetime(2018, 7, 31, 0, 0),
+ 'horaPresMax': '08',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '20:50',
+ 'horaTempMax': '15:30',
+ 'horaTempMin': '05:40',
+ 'horasSol': '13.6',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '923.2 ',
+ 'presMin': '920.3 ',
+ 'rachaMax': '8.9 ',
+ 'tempMax': '30.8 ',
+ 'tempMin': '12.9 ',
+ 'velMedia': '2.5 '}
+2019-04-06 16:10:07 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:07 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:07 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:07 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-07-10 00:00:00
+2019-04-06 16:10:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '09',
+ 'fecha': datetime.datetime(2018, 7, 10, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '20',
+ 'horaRachaMax': '22:20',
+ 'horaTempMax': '15:50',
+ 'horaTempMin': '05:10',
+ 'horasSol': '13.8',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '924.8 ',
+ 'presMin': '921.0 ',
+ 'rachaMax': '10.3 ',
+ 'tempMax': '28.7 ',
+ 'tempMin': '14.0 ',
+ 'velMedia': '3.1 '}
+2019-04-06 16:10:07 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:07 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-06-26 00:00:00
+2019-04-06 16:10:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '31',
+ 'fecha': datetime.datetime(2018, 6, 26, 0, 0),
+ 'horaPresMax': 'Varias',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '17:20',
+ 'horaTempMax': '14:40',
+ 'horaTempMin': '03:50',
+ 'horasSol': '9.6',
+ 'indicativo': '2539',
+ 'precipitacion': '1.5 ',
+ 'presMax': '922.1 ',
+ 'presMin': '918.5 ',
+ 'rachaMax': '7.8 ',
+ 'tempMax': '31.8 ',
+ 'tempMin': '15.3 ',
+ 'velMedia': '2.2 '}
+2019-04-06 16:10:07 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:07 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:07 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-07-03 00:00:00
+2019-04-06 16:10:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '24',
+ 'fecha': datetime.datetime(2018, 7, 3, 0, 0),
+ 'horaPresMax': '08',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '16:10',
+ 'horaTempMax': '17:05',
+ 'horaTempMin': '02:50',
+ 'horasSol': '12.7',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '922.5 ',
+ 'presMin': '919.6 ',
+ 'rachaMax': '9.7 ',
+ 'tempMax': '25.7 ',
+ 'tempMin': '11.7 ',
+ 'velMedia': '3.1 '}
+2019-04-06 16:10:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:08 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:08 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-06-12 00:00:00
+2019-04-06 16:10:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '33',
+ 'fecha': datetime.datetime(2018, 6, 12, 0, 0),
+ 'horaPresMax': '24',
+ 'horaPresMin': '03',
+ 'horaRachaMax': '13:05',
+ 'horaTempMax': '14:30',
+ 'horaTempMin': '01:10',
+ 'horasSol': '9.2',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '924.1 ',
+ 'presMin': '918.7 ',
+ 'rachaMax': '9.7 ',
+ 'tempMax': '21.4 ',
+ 'tempMin': '9.0 ',
+ 'velMedia': '4.2 '}
+2019-04-06 16:10:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:08 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:08 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:08 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-07-17 00:00:00
+2019-04-06 16:10:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '11',
+ 'fecha': datetime.datetime(2018, 7, 17, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '24',
+ 'horaRachaMax': '11:20',
+ 'horaTempMax': '16:10',
+ 'horaTempMin': '05:20',
+ 'horasSol': '12.5',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '923.7 ',
+ 'presMin': '918.1 ',
+ 'rachaMax': '10.3 ',
+ 'tempMax': '29.2 ',
+ 'tempMin': '12.4 ',
+ 'velMedia': '3.1 '}
+2019-04-06 16:10:08 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:08 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-06-19 00:00:00
+2019-04-06 16:10:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '06',
+ 'fecha': datetime.datetime(2018, 6, 19, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '19',
+ 'horaRachaMax': '06:30',
+ 'horaTempMax': '16:30',
+ 'horaTempMin': '05:10',
+ 'horasSol': '14.5',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '926.4 ',
+ 'presMin': '922.2 ',
+ 'rachaMax': '11.4 ',
+ 'tempMax': '27.2 ',
+ 'tempMin': '11.4 ',
+ 'velMedia': '3.6 '}
+2019-04-06 16:10:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:09 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:09 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-06-05 00:00:00
+2019-04-06 16:10:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '31',
+ 'fecha': datetime.datetime(2018, 6, 5, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '12:20',
+ 'horaTempMax': '12:05',
+ 'horaTempMin': '01:50',
+ 'horasSol': '1.5',
+ 'indicativo': '2539',
+ 'precipitacion': '12.7 ',
+ 'presMax': '917.6 ',
+ 'presMin': '916.0 ',
+ 'rachaMax': '10.3 ',
+ 'tempMax': '14.2 ',
+ 'tempMin': '7.3 ',
+ 'velMedia': '3.3 '}
+2019-04-06 16:10:09 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:09 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-05-29 00:00:00
+2019-04-06 16:10:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '24',
+ 'fecha': datetime.datetime(2018, 5, 29, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '18',
+ 'horaRachaMax': '15:40',
+ 'horaTempMax': '14:10',
+ 'horaTempMin': '01:10',
+ 'horasSol': '7.5',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '918.2 ',
+ 'presMin': '915.9 ',
+ 'rachaMax': '10.8 ',
+ 'tempMax': '18.4 ',
+ 'tempMin': '9.8 ',
+ 'velMedia': '2.8 '}
+2019-04-06 16:10:09 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:10 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:10 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-05-22 00:00:00
+2019-04-06 16:10:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '31',
+ 'fecha': datetime.datetime(2018, 5, 22, 0, 0),
+ 'horaPresMax': '24',
+ 'horaPresMin': '00',
+ 'horaRachaMax': '14:00',
+ 'horaTempMax': '17:40',
+ 'horaTempMin': '05:00',
+ 'horasSol': '10.3',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '919.9 ',
+ 'presMin': '916.2 ',
+ 'rachaMax': '8.9 ',
+ 'tempMax': '21.9 ',
+ 'tempMin': '9.1 ',
+ 'velMedia': '1.7 '}
+2019-04-06 16:10:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:10 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:10 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-05-01 00:00:00
+2019-04-06 16:10:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '27',
+ 'fecha': datetime.datetime(2018, 5, 1, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': 'Varias',
+ 'horaRachaMax': '14:40',
+ 'horaTempMax': '16:00',
+ 'horaTempMin': '05:10',
+ 'horasSol': '11.5',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '919.9 ',
+ 'presMin': '917.1 ',
+ 'rachaMax': '7.8 ',
+ 'tempMax': '12.3 ',
+ 'tempMin': '-0.3 ',
+ 'velMedia': '2.5 '}
+2019-04-06 16:10:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:10 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:10 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-04-24 00:00:00
+2019-04-06 16:10:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '05',
+ 'fecha': datetime.datetime(2018, 4, 24, 0, 0),
+ 'horaPresMax': '11',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '01:00',
+ 'horaTempMax': '15:10',
+ 'horaTempMin': '05:50',
+ 'horasSol': '11.5',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '922.3 ',
+ 'presMin': '919.8 ',
+ 'rachaMax': '7.8 ',
+ 'tempMax': '24.3 ',
+ 'tempMin': '9.4 ',
+ 'velMedia': '2.2 '}
+2019-04-06 16:10:10 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:10 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-05-15 00:00:00
+2019-04-06 16:10:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '06',
+ 'fecha': datetime.datetime(2018, 5, 15, 0, 0),
+ 'horaPresMax': '05',
+ 'horaPresMin': '17',
+ 'horaRachaMax': '21:20',
+ 'horaTempMax': '15:20',
+ 'horaTempMin': '04:20',
+ 'horasSol': '13.8',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '924.9 ',
+ 'presMin': '920.9 ',
+ 'rachaMax': '11.9 ',
+ 'tempMax': '19.7 ',
+ 'tempMin': '0.7 ',
+ 'velMedia': '5.8 '}
+2019-04-06 16:10:10 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:10 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-05-08 00:00:00
+2019-04-06 16:10:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '06',
+ 'fecha': datetime.datetime(2018, 5, 8, 0, 0),
+ 'horaPresMax': '01',
+ 'horaPresMin': '16',
+ 'horaRachaMax': '19:05',
+ 'horaTempMax': '14:30',
+ 'horaTempMin': '05:30',
+ 'horasSol': '10.4',
+ 'indicativo': '2539',
+ 'precipitacion': 'Ip ',
+ 'presMax': '919.0 ',
+ 'presMin': '915.8 ',
+ 'rachaMax': '11.9 ',
+ 'tempMax': '22.9 ',
+ 'tempMin': '8.8 ',
+ 'velMedia': '3.9 '}
+2019-04-06 16:10:10 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:11 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:11 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-04-17 00:00:00
+2019-04-06 16:10:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '20',
+ 'fecha': datetime.datetime(2018, 4, 17, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': '00',
+ 'horaRachaMax': '15:40',
+ 'horaTempMax': '15:50',
+ 'horaTempMin': '05:40',
+ 'horasSol': '12.6',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '927.3 ',
+ 'presMin': '924.5 ',
+ 'rachaMax': '5.6 ',
+ 'tempMax': '19.4 ',
+ 'tempMin': '2.5 ',
+ 'velMedia': '1.4 '}
+2019-04-06 16:10:11 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:11 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:11 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-04-10 00:00:00
+2019-04-06 16:10:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '23',
+ 'fecha': datetime.datetime(2018, 4, 10, 0, 0),
+ 'horaPresMax': '00',
+ 'horaPresMin': '16',
+ 'horaRachaMax': '04:40',
+ 'horaTempMax': '12:50',
+ 'horaTempMin': '21:10',
+ 'horasSol': '2.4',
+ 'indicativo': '2539',
+ 'precipitacion': '4.4 ',
+ 'presMax': '908.5 ',
+ 'presMin': '897.8 ',
+ 'rachaMax': '14.4 ',
+ 'tempMax': '8.6 ',
+ 'tempMin': '1.3 ',
+ 'velMedia': '6.1 '}
+2019-04-06 16:10:11 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:11 [scrapy.core.engine] DEBUG: Crawled (200) <POST https://datosclima.es/Aemethistorico/Meteosingleday.php> (referer: https://datosclima.es/Aemethistorico/Meteosingleday.php)
+2019-04-06 16:10:12 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:12 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-04-03 00:00:00
+2019-04-06 16:10:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '22',
+ 'fecha': datetime.datetime(2018, 4, 3, 0, 0),
+ 'horaPresMax': 'Varias',
+ 'horaPresMin': '16',
+ 'horaRachaMax': '13:30',
+ 'horaTempMax': '13:40',
+ 'horaTempMin': '23:59',
+ 'horasSol': '5.3',
+ 'indicativo': '2539',
+ 'precipitacion': '3.1 ',
+ 'presMax': '910.0 ',
+ 'presMin': '906.7 ',
+ 'rachaMax': '19.7 ',
+ 'tempMax': '13.0 ',
+ 'tempMin': '5.3 ',
+ 'velMedia': '9.4 '}
+2019-04-06 16:10:12 [webscraping.spiders.datosclima] INFO: Estación: VALLADOLID AEROPUERTO
+2019-04-06 16:10:12 [webscraping.pipelines] INFO: Añadir datos meteorológicos para estación: 2539 en fecha: 2018-03-27 00:00:00
+2019-04-06 16:10:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://datosclima.es/Aemethistorico/Meteosingleday.php>
+{'dirViento': '29',
+ 'fecha': datetime.datetime(2018, 3, 27, 0, 0),
+ 'horaPresMax': '10',
+ 'horaPresMin': '24',
+ 'horaRachaMax': '15:40',
+ 'horaTempMax': '16:10',
+ 'horaTempMin': '05:50',
+ 'horasSol': '9.7',
+ 'indicativo': '2539',
+ 'precipitacion': '0.0 ',
+ 'presMax': '929.2 ',
+ 'presMin': '925.7 ',
+ 'rachaMax': '12.5 ',
+ 'tempMax': '18.1 ',
+ 'tempMin': '1.8 ',
+ 'velMedia': '4.2 '}
+2019-04-06 16:10:12 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-04-06 16:10:12 [scrapy.extensions.feedexport] INFO: Stored csv feed (106 items) in: datosclima_valladolid.csv
+2019-04-06 16:10:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 54707,
+ 'downloader/request_count': 111,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/request_method_count/POST': 110,
+ 'downloader/response_bytes': 798060,
+ 'downloader/response_count': 111,
+ 'downloader/response_status_count/200': 111,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 4, 6, 14, 10, 12, 15167),
+ 'item_dropped_count': 3,
+ 'item_dropped_reasons_count/DropItem': 3,
+ 'item_scraped_count': 106,
+ 'log_count/DEBUG': 218,
+ 'log_count/INFO': 334,
+ 'log_count/WARNING': 3,
+ 'request_depth_max': 3,
+ 'response_received_count': 111,
+ 'scheduler/dequeued': 111,
+ 'scheduler/dequeued/memory': 111,
+ 'scheduler/enqueued': 111,
+ 'scheduler/enqueued/memory': 111,
+ 'start_time': datetime.datetime(2019, 4, 6, 14, 9, 30, 719523)}
+2019-04-06 16:10:12 [scrapy.core.engine] INFO: Spider closed (finished)
