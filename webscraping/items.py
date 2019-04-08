@@ -56,3 +56,16 @@ class DatosClimaMundialItem(scrapy.Item):
     huboNieve = scrapy.Field()
     huboTormenta = scrapy.Field()
     huboNiebla = scrapy.Field()
+
+ class DatosClimaMundialEstacionItem(scrapy.Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    continente = scrapy.Field()
+    pais = scrapy.Field()
+    estacion = scrapy.Field()
+    idEstacion = scrapy.Field()
+    latitud = scrapy.Field()
+    longitud = scrapy.Field()
+    altitud = scrapy.Field()
+    mes = scrapy.Field()
+    finDatos = scrapy.Field()
