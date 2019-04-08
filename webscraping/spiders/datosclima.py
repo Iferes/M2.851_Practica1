@@ -68,18 +68,31 @@ class EstacionesSpider(scrapy.Spider):
                 if inicioDatos is None: return None
                 if finDatos is None: return None                    
                 if inicioDatos > finDatos: return None                
-                
-                # Registra datos de estación
-                yield DatosClimaEstacionItem (
-                    provincia = provincia,
-                    estacion = estacion,
-                    indicativo = indicativo,
-                    inicioDatos = inicioDatos,
-                    finDatos = finDatos,
-                    longitud = longitud,
-                    latitud = latitud,
-                    altitud = altitud,
-                ) 
+                            
+                # Todos los campos tienen que tener valor                
+                itemValid=True
+                for stationValue in stationValues:
+                    #logger.debug('Check: {}'.format(field)) 
+                    if (not stationValue):                    
+                        logger.info('Datos de estación incompletos: {}'.format(indicativo))   
+                        logger.info(stationValues)
+                        itemValid=False
+                        break
+                    
+                # Si tenemos datos para todos los items -> añadimos una nueva instancia al conjunto de datos de estaciones
+                if (itemValid):
+                    logger.info('Añadir datos indicativo de estación: {} Estación: {}'.format(indicativo,estacion))         
+                    # Registra datos de estación
+                    yield DatosClimaEstacionItem (
+                        provincia = provincia,
+                        estacion = estacion,
+                        indicativo = indicativo,
+                        inicioDatos = inicioDatos,
+                        finDatos = finDatos,
+                        longitud = longitud,
+                        latitud = latitud,
+                        altitud = altitud,
+                    ) 
   
     def doRequest(self, url, provincia='', id_hija='', indicativo='', nombre='', day='', month='', year='', ddmmyyyy='', validacion='0'):
         
@@ -163,26 +176,37 @@ class DatosclimaSpider(scrapy.Spider):
                 if inicioDatos is None: return None
                 if finDatos is None: return None                    
                 if inicioDatos > finDatos: return None                
-                                           
-                # Registra datos meteorológicos       
-                yield DatosClimaItem (
-                    indicativo = indicativo,
-                    fecha = fecha,
-                    tempMax =  dataValues[0],
-                    presMax =  dataValues[1],
-                    rachaMax =  dataValues[2],
-                    horasSol =  dataValues[3],
-                    horaTempMax =  dataValues[4],
-                    horaPresMax =  dataValues[5],
-                    horaRachaMax =  dataValues[6],
-                    precipitacion =  dataValues[7],
-                    tempMin =  dataValues[8],
-                    presMin =  dataValues[9],
-                    dirViento =  dataValues[10],
-                    horaTempMin =  dataValues[12],
-                    horaPresMin =  dataValues[13],
-                    velMedia =  dataValues[14],
-                )
+                         
+                # Al menos un campo con valor
+                itemValid=False
+                for dataValue in dataValues:
+                    if (dataValue):
+                        itemValid=True
+                        break
+                
+                # Si al menos hay un dato válido -> añadimos una nueva instancia al conjunto de datos
+                if (itemValid):
+                    logger.info('Añadir datos meteorológicos para estación: {} en fecha: {}'.format(indicativo, fecha))
+            
+                    # Registra datos meteorológicos       
+                    yield DatosClimaItem (
+                        indicativo = indicativo,
+                        fecha = fecha,
+                        tempMax =  dataValues[0],
+                        presMax =  dataValues[1],
+                        rachaMax =  dataValues[2],
+                        horasSol =  dataValues[3],
+                        horaTempMax =  dataValues[4],
+                        horaPresMax =  dataValues[5],
+                        horaRachaMax =  dataValues[6],
+                        precipitacion =  dataValues[7],
+                        tempMin =  dataValues[8],
+                        presMin =  dataValues[9],
+                        dirViento =  dataValues[10],
+                        horaTempMin =  dataValues[12],
+                        horaPresMin =  dataValues[13],
+                        velMedia =  dataValues[14],
+                    )
                 
                 if (indicativo not in self.ids_estacion_crawled):
                     
