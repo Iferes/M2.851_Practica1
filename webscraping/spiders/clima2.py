@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from clima_mundial.items import ClimaMundialItem
-from clima_mundial.items import DatosClimaMundialEstacionItem
+from webscraping.items import ClimaMundialItem
+from webscraping.items import DatosClimaMundialEstacionItem
 
 class Clima2Spider(scrapy.Spider):
 	name = 'clima2'
