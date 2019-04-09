@@ -92,7 +92,7 @@ class Clima2Spider(scrapy.Spider):
 	def parseDatosClimaticos(self, response):
 		cellsGeograficos = response.css('td')
 		cellsLatitud = response.css('b')
-		cellsDias = response.css('strong::text')
+		cellsDias = response.css('strong')
 		print("Los dias son: ")
 		print(len(cellsDias.getall()))
 		stationValues = []
@@ -100,6 +100,8 @@ class Clima2Spider(scrapy.Spider):
 			stationValues.append(cellsGeograficos[idx].css('*::text').get())
 		for idx in range(0,3):
 			stationValues.append(cellsLatitud[idx].css('*::text').get())
+		for idx in range(4,len(cellsDias.getall())):
+			dias.append(cellsDias[idx].css('*::text').get())
 		print (stationValues)
 		dataValues = []
 		#for idx in range(33,62,2):
