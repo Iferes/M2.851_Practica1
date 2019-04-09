@@ -102,17 +102,31 @@ class Clima2Spider(scrapy.Spider):
 			stationValues.append(cellsLatitud[idx].css('*::text').get())
 		for idx in range(4,len(cellsDias.getall())):
 			dias.append(cellsDias[idx].css('*::text').get())
-		print (stationValues)
-		dataValues = []
-		# Solo recupero el día???
-		headersClima = response.css('table.medias.mensuales.numspan th::text').getall()
-		datosClima = response.css('table.medias.mensuales.numspan td::text').getall()
-		dataValues = {}
-		for headerClima,datoClima in zip(headersClima,datosClima) :
-			if headerClima is None: continue
-			if datoClima is None: continue
-			dataValues[headerClima]=datoClima
-		yield dataValues
+		#dataValues = []
+		headersClima = [dia, T, TM, Tm, SLP, H, PP, VV, V, VM, VG, RA, SN, TS, FG]
+		datosClima = np.array(response.css('table.medias.mensuales td').getall())
+		datosClima = datosClima.reshape(int(len(datos)/15),15)
+		for datoClima in datosClima:
+			for i in range(0,15):
+				headersClima[i] = datoClima[i]
+				print datoClima[i]
+		yield ClimaMundialItem(
+			dia : dia,
+			T : T,
+			TM : TM,
+			Tm : Tm,
+			SLP : SLP,
+			H : H,
+			PP : PP,
+			VV : VV,
+			V : V,
+			VM : VM,
+			VG : VG,
+			RA : RA,
+			SN : SN,
+			TS : TS,
+			FG : FG,
+		)
 
 		
 		continente = stationValues[0]
@@ -134,7 +148,7 @@ class Clima2Spider(scrapy.Spider):
 			latitud = latitud,
 			longitud = longitud,
 			altitud = altitud,
-        ) 
+        	) 
 		
 		
 	pass
