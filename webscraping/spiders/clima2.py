@@ -103,9 +103,9 @@ class Clima2Spider(scrapy.Spider):
 		for idx in range(4,len(cellsDias.getall())):
 			dias.append(cellsDias[idx].css('*::text').get())
 		#dataValues = []
-		headersClima = [dia, T, TM, Tm, SLP, H, PP, VV, V, VM, VG, RA, SN, TS, FG]
+		headersClima = ["dia", "T", "TM", "", "SLP", "H", "PP", "VV", "V", "VM", "VG", "RA", "SN", "TS", "FG"]
 		datosClima = np.array(response.css('table.medias.mensuales td').getall())
-		datosClima = datosClima.reshape(int(len(datos)/15),15)
+		datosClima = datosClima.reshape(int(len(datosClima)/15),15)
 		for datoClima in datosClima:
 			for i in range(0,15):
 				headersClima[i] = datoClima[i]
