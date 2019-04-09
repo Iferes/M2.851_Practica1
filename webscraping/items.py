@@ -42,21 +42,22 @@ class DatosClimaItem(scrapy.Item):
 class DatosClimaMundialItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    tempMedia = scrapy.Field()
-    tempMax = scrapy.Field()
-    tempMin = scrapy.Field()
-    presAtm = scrapy.Field()
-    humedad = scrapy.Field()
-    precipTotal = scrapy.Field()
-    visibMedia = scrapy.Field()
-    velMediaViento = scrapy.Field()
-    velMaxViento = scrapy.Field()
-    velRafViento = scrapy.Field()
-    huboLluvia = scrapy.Field()
-    huboNieve = scrapy.Field()
-    huboTormenta = scrapy.Field()
-    huboNiebla = scrapy.Field()
-
+    dia = scrapy.Field()
+	T = scrapy.Field()
+	TM = scrapy.Field()
+	Tm = scrapy.Field()
+	SLP = scrapy.Field()
+	H = scrapy.Field()
+	PP = scrapy.Field()
+	VV = scrapy.Field()
+	V = scrapy.Field()
+	VM = scrapy.Field()
+	VG = scrapy.Field()
+	RA = scrapy.Field()
+	SN = scrapy.Field()
+	TS = scrapy.Field()
+	FG = scrapy.Field()
+    
  class DatosClimaMundialEstacionItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
