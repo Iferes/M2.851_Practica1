@@ -104,11 +104,16 @@ class Clima2Spider(scrapy.Spider):
 			dias.append(cellsDias[idx].css('*::text').get())
 		print (stationValues)
 		dataValues = []
-		#for idx in range(33,62,2):
-		#	dataValues.append(cells[idx].css('*::text').get())
-		dias = [1]
-		#for idx in range(2,len()
-		dias.append(response.css('strong::text').getall())
+		headersClima = response.css('table.medias.mensuales.numspan th').getall()
+		datosClima = response.css('table.medias.mensuales.numspan td').getall()
+		dataValues = {}
+		if (len(headersClima) == len(datosClima)):
+			for headerSubasta,datoSubasta in zip(headersClima,datosClima) :
+				if headerClima is None: continue
+				if datoClima is None: continue
+				dataValues[headerClima]=datoClima
+			yield dataValues
+
 		
 		continente = stationValues[0]
 		pais = stationValues[1]
