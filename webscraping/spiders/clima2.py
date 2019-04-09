@@ -109,7 +109,7 @@ class Clima2Spider(scrapy.Spider):
 		for datoClima in datosClima:
 			for i in range(0,15):
 				headersClima[i] = datoClima[i]
-				print datoClima[i]
+				print (datoClima[i])
 		yield ClimaMundialItem(
 			dia : dia,
 			T : T,
