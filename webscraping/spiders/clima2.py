@@ -111,21 +111,21 @@ class Clima2Spider(scrapy.Spider):
 				headersClima[i] = datoClima[i]
 				print (datoClima[i])
 		yield ClimaMundialItem(
-			dia : dia,
-			T : T,
-			TM : TM,
-			Tm : Tm,
-			SLP : SLP,
-			H : H,
-			PP : PP,
-			VV : VV,
-			V : V,
-			VM : VM,
-			VG : VG,
-			RA : RA,
-			SN : SN,
-			TS : TS,
-			FG : FG,
+			dia = dia,
+			T = T,
+			TM = TM,
+			Tm = Tm,
+			SLP = SLP,
+			H = H,
+			PP = PP,
+			VV = VV,
+			V = V,
+			VM = VM,
+			VG = VG,
+			RA = RA,
+			SN = SN,
+			TS = TS,
+			FG = FG,
 		)
 
 		
