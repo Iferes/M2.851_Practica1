@@ -15,8 +15,6 @@ Para poder familiarizarnos con este framework nos hemos guiado de la documentaci
 ## Código fuente. Ficheros
 Dentro del proyecto webscraping tenemos los siguientes ficheros:
 
-* Spiders/estaciones.py: spider para extraer los datos de estaciones nacionales
-
 * Spiders/datosclima.py: spider para extraer los datos meteorológicos nacionales
 
 * Spiders/clima2.py: spider para extraer datos de países, estaciones y meteorológicos mundiales.
