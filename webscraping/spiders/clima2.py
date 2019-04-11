@@ -101,7 +101,15 @@ class Clima2Spider(scrapy.Spider):
 			stationValues.append(cellsLatitud[idx].css('*::text').get())
 		for idx in range(4,len(cellsDias.getall())):
 			dias.append(cellsDias[idx].css('*::text').get())
-		#dataValues = []
+		# Recuperamos los datos de la estación propiamente dicha
+		continente = stationValues[0]
+		pais = stationValues[1]
+		estacion = stationValues[2].replace("Clima","")
+		year = stationValues[4]
+		mes = stationValues[5]
+		latitud = stationValues[6]
+		longitud = stationValues[7]
+		altitud  = stationValues[8]
 		headersClima = ["dia", "T", "TM", "Tm", "SLP", "H", "PP", "VV", "V", "VM", "VG", "RA", "SN", "TS", "FG"]
 		datosClima = np.array(response.css('table.medias.mensuales td'))
 		# Tengo 15 datos por cada día (incluyendo el día luego de todo lo recuperado lo separo en bloques de 15)
@@ -109,6 +117,14 @@ class Clima2Spider(scrapy.Spider):
 		# Elimino la última fila porque corresponde a medias y nosotros queremos sacar los datos diarios.
 		for datoClima in datosClima[::-1]:
 			yield DatosClimaMundialItem(
+				continente = continente,
+				pais = pais,
+				estacion = estacion,
+				latitud = latitud,
+				longitud = longitud,
+				altitud = altitud,
+				year = year,
+				mes = mes,
 				dia = datoClima[0],
 				T = datoClima[1],
 				TM = datoClima[2],
@@ -126,26 +142,7 @@ class Clima2Spider(scrapy.Spider):
 				FG = datoClima[14],
 			)
 		
-		continente = stationValues[0]
-		pais = stationValues[1]
-		estacion = stationValues[2].replace("Clima","")
-		year = stationValues[4]
-		mes = stationValues[5]
-		latitud = stationValues[6]
-		longitud = stationValues[7]
-		altitud  = stationValues[8]
-		
-		# Registra datos de estación
-		yield DatosClimaMundialEstacionItem(
-			continente = continente,
-			pais = pais,
-			estacion = estacion,
-			year = year,
-			mes = mes,
-			latitud = latitud,
-			longitud = longitud,
-			altitud = altitud,
-        	) 
-		
+
+
 		
 	pass
