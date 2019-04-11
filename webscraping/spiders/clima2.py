@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
+import numpy as np
 from webscraping.items import ClimaMundialItem
 from webscraping.items import DatosClimaMundialEstacionItem
 
@@ -93,8 +94,6 @@ class Clima2Spider(scrapy.Spider):
 		cellsGeograficos = response.css('td')
 		cellsLatitud = response.css('b')
 		cellsDias = response.css('strong')
-		print("Los dias son: ")
-		print(len(cellsDias.getall()))
 		stationValues = []
 		for idx in range(2,8):
 			stationValues.append(cellsGeograficos[idx].css('*::text').get())
@@ -103,31 +102,29 @@ class Clima2Spider(scrapy.Spider):
 		for idx in range(4,len(cellsDias.getall())):
 			dias.append(cellsDias[idx].css('*::text').get())
 		#dataValues = []
-		headersClima = ["dia", "T", "TM", "", "SLP", "H", "PP", "VV", "V", "VM", "VG", "RA", "SN", "TS", "FG"]
-		datosClima = np.array(response.css('table.medias.mensuales td').getall())
+		headersClima = ["dia", "T", "TM", "Tm", "SLP", "H", "PP", "VV", "V", "VM", "VG", "RA", "SN", "TS", "FG"]
+		datosClima = np.array(response.css('table.medias.mensuales td'))
+		# Tengo 15 datos por cada día (incluyendo el día luego de todo lo recuperado lo separo en bloques de 15)
 		datosClima = datosClima.reshape(int(len(datosClima)/15),15)
-		for datoClima in datosClima:
-			for i in range(0,15):
-				headersClima[i] = datoClima[i]
-				print (datoClima[i])
-		yield ClimaMundialItem(
-			dia = dia,
-			T = T,
-			TM = TM,
-			Tm = Tm,
-			SLP = SLP,
-			H = H,
-			PP = PP,
-			VV = VV,
-			V = V,
-			VM = VM,
-			VG = VG,
-			RA = RA,
-			SN = SN,
-			TS = TS,
-			FG = FG,
-		)
-
+		# Elimino la última fila porque corresponde a medias y nosotros queremos sacar los datos diarios.
+		for datoClima in datosClima[::-1]:
+			yield DatosClimaMundialItem(
+				dia = datoClima[0],
+				T = datoClima[1],
+				TM = datoClima[2],
+				Tm = datoClima[3],
+				SLP = datoClima[4],
+				H = datoClima[5],
+				PP = datoClima[6],
+				VV = datoClima[7],
+				V = datoClima[8],
+				VM = datoClima[9],
+				VG = datoClima[10],
+				RA = datoClima[11],
+				SN = datoClima[12],
+				TS = datoClima[13],
+				FG = datoClima[14],
+			)
 		
 		continente = stationValues[0]
 		pais = stationValues[1]
