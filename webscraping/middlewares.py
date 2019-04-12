@@ -5,8 +5,13 @@
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
+import logging
+import os
 from scrapy import signals
+import urllib.robotparser
+from urllib.parse import urlparse
 
+logger = logging.getLogger(__name__)
 
 class WebscrapingSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
@@ -61,6 +66,8 @@ class WebscrapingDownloaderMiddleware(object):
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
 
+    _robotparser = None
+    
     @classmethod
     def from_crawler(cls, crawler):
         # This method is used by Scrapy to create your spiders.
@@ -72,6 +79,24 @@ class WebscrapingDownloaderMiddleware(object):
         # Called for each request that goes through the downloader
         # middleware.
 
+        basename = os.path.basename(request.url)
+        if (basename == 'robots.txt'):
+            self._robotparser = urllib.robotparser.RobotFileParser()
+            self._robotparser.set_url(request.url)
+            self._robotparser.read()
+            rrate = self._robotparser.request_rate("*")
+            logger.info("Análisis de fichero robots.txt ({})".format(request.url))
+            if (rrate):
+                logger.info("\tSe permite el rastreo de {} páginas cada {} segundos.".format(rrate.requests, rrate.seconds))
+            logger.info("\tRetardo a aplicar cuando rastreando esta página: {}".format(self._robotparser.crawl_delay("*")))
+            
+        else:
+            if (self._robotparser):
+                if (self._robotparser.can_fetch("*", request.url)):
+                    logger.info("Fichero robots.txt no pone limites para rastrear la página: {}".format(request.url))
+                else:
+                    logger.error("Fichero robots.txt limita el rastreo de la página: {}".format(request.url))
+            
         # Must either:
         # - return None: continue processing this request
         # - or return a Response object

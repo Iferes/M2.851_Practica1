@@ -18,7 +18,7 @@ class EstacionesSpider(scrapy.Spider):
     estaciones_seen = set()
             
     def parse(self, response):
-        
+                
         cells = response.css('td')        
         stationValues = []
         for idx in range(2,17,2):
