@@ -8,8 +8,6 @@ class Clima2Spider(scrapy.Spider):
 	name = 'clima2'
 	allowed_domains = ['www.tutiempo.net']
 	start_urls = ['https://www.tutiempo.net/clima']
-	continentes = []
-	
 
 	def parse(self, response):
 		# Estoy en la página de inicio.
@@ -61,16 +59,10 @@ class Clima2Spider(scrapy.Spider):
 		estaciones = response.css("div.mlistados.mt10 a::text").getall()
 		# Obtengo la url asociada a todas las estaciones que tenemos para el año elegido
 		urls = response.css("div.mlistados.mt10 a::attr(href)").getall()
-		# Obtengo los años para los que tenemos disponibles para el país en el que estemos
-		#anyos = response.css('select[name=YearClimate] option::text').getall()
-		#anyos = response.css('select.SelYearCl option::attr(value)').getall() 
-		#print (anyos) 
 		for url in urls:
 			if url is not None:
 				# Construyo las urls uniendo la parte de año a la url inicial
-				#print(response.urljoin(next_page_estacion.strip()))
 				url = response.urljoin(url.strip())
-				#anyo2 = response.urljoin(anyo)
 				yield scrapy.Request(url, callback=self.parseDatosEstaciones, method='GET', dont_filter=True)
 	
 	def parseDatosEstaciones(self, response):
@@ -78,28 +70,29 @@ class Clima2Spider(scrapy.Spider):
 		meses = response.css("div.mlistados.mt10 a::text").getall()
 		# Obtengo la url asociada a todas las estaciones que tenemos para el año elegido
 		urls = response.css("div.mlistados.mt10 a::attr(href)").getall()
-		# Obtengo los años para los que tenemos disponibles para el país en el que estemos
-		#anyos = response.css('select[name=YearClimate] option::text').getall()
-		#anyos = response.css('select.SelYearCl option::attr(value)').getall() 
-		#print (anyos) 
 		for url in urls:
 			if url is not None:
-				# Construyo las urls uniendo la parte de año a la url inicial
-				#print(response.urljoin(next_page_estacion.strip()))
+				# Construyo las urls uniendo la parte de la estación a la url en la que estoy
 				url = response.urljoin(url.strip())
-				#anyo2 = response.urljoin(anyo)
 				yield scrapy.Request(url, callback=self.parseDatosClimaticos, method='GET', dont_filter=True)
 
 	def parseDatosClimaticos(self, response):
+		# Obtengo los datos de continente y país
 		cellsGeograficos = response.css('td')
+		# Obtengo los datos de longitud, latitud y altitud
 		cellsLatitud = response.css('b')
+		# Obtengo el dia del mes
 		cellsDias = response.css('strong')
+		# Voy a obtener los datos propios geográficos de la estación
 		stationValues = []
 		for idx in range(2,8):
+			#Continente, pais, estación, año, mes, id de la estación
 			stationValues.append(cellsGeograficos[idx].css('*::text').get())
 		for idx in range(0,3):
+			#Longitud, latitud, altitud
 			stationValues.append(cellsLatitud[idx].css('*::text').get())
 		for idx in range(4,len(cellsDias.getall())):
+			#Días
 			dias.append(cellsDias[idx].css('*::text').get())
 		# Recuperamos los datos de la estación propiamente dicha
 		continente = stationValues[0]
@@ -110,12 +103,12 @@ class Clima2Spider(scrapy.Spider):
 		latitud = stationValues[6]
 		longitud = stationValues[7]
 		altitud  = stationValues[8]
-		headersClima = ["dia", "T", "TM", "Tm", "SLP", "H", "PP", "VV", "V", "VM", "VG", "RA", "SN", "TS", "FG"]
-		datosClima = np.array(response.css('table.medias.mensuales td'))
+		# obtengo todos los registros climatológicos que tengo para esa selección
+		datosClima = np.array(response.css('table.medias.mensuales.numspan td'))
 		# Tengo 15 datos por cada día (incluyendo el día luego de todo lo recuperado lo separo en bloques de 15)
 		datosClima = datosClima.reshape(int(len(datosClima)/15),15)
-		# Elimino la última fila porque corresponde a medias y nosotros queremos sacar los datos diarios.
-		for datoClima in datosClima[::-1]:
+		# Al recorrer la lista de elementos elimino el último porque corresponde a medias y nosotros queremos sacar los datos diarios.
+		for i in range(len(datosClima)-1):
 			yield DatosClimaMundialItem(
 				continente = continente,
 				pais = pais,
@@ -125,21 +118,21 @@ class Clima2Spider(scrapy.Spider):
 				altitud = altitud,
 				year = year,
 				mes = mes,
-				dia = datoClima[0],
-				T = datoClima[1],
-				TM = datoClima[2],
-				Tm = datoClima[3],
-				SLP = datoClima[4],
-				H = datoClima[5],
-				PP = datoClima[6],
-				VV = datoClima[7],
-				V = datoClima[8],
-				VM = datoClima[9],
-				VG = datoClima[10],
-				RA = datoClima[11],
-				SN = datoClima[12],
-				TS = datoClima[13],
-				FG = datoClima[14],
+				dia = datosClima[i][0],
+				T = datosClima[i][1],
+				TM = datosClima[i][2],
+				Tm = datosClima[i][3],
+				SLP = datosClima[i][4],
+				H = datosClima[i][5],
+				PP = datosClima[i][6],
+				VV = datosClima[i][7],
+				V = datosClima[i][8],
+				VM = datosClima[i][9],
+				VG = datosClima[i][10],
+				RA = datosClima[i][11],
+				SN = datosClima[i][12],
+				TS = datosClima[i][13],
+				FG = datosClima[i][14],
 			)
 		
 
