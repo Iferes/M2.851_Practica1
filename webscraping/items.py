@@ -42,6 +42,7 @@ class DatosClimaItem(scrapy.Item):
 class DatosClimaMundialItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    # Definimos en el mismo Item todos los datos que queremos extraer tanto de las estaciones como meteorológicos
     continente = scrapy.Field()
     pais = scrapy.Field()
     estacion = scrapy.Field()
