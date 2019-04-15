@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 import numpy as np
+import logging
 from webscraping.items import DatosClimaMundialItem
 from webscraping.items import DatosClimaMundialEstacionItem
 
