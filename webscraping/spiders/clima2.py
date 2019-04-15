@@ -4,11 +4,14 @@ import numpy as np
 import logging
 from webscraping.items import DatosClimaMundialItem
 from webscraping.items import DatosClimaMundialEstacionItem
+logger = logging.getLogger(__name__)
 
 class Clima2Spider(scrapy.Spider):
 	name = 'clima2'
 	allowed_domains = ['www.tutiempo.net']
 	start_urls = ['https://www.tutiempo.net/clima']
+	continentes = []
+	logger = logging.getLogger(__name__)
 
 	def parse(self, response):
 		# Estoy en la página de inicio.
@@ -20,8 +23,10 @@ class Clima2Spider(scrapy.Spider):
 		# Recorro el bucle de páginas para entrar en cada una de ellas
 		for continente, url in zip(continentes,urls):
 			if url is not None:
+				logger.info("Continente: {}".format(continente))
 				# Construyo las urls de acceso a la información de cada continente uniendo la parte de href a la url en la que estoy
 				url = response.urljoin(url.strip())
+				logger.info("Url asociada: {}".format(url))
 				# Por cada url llamo a la funcion parseDatosContinentes para tratar la información de cada uno de ellos
 				yield scrapy.Request(url, callback=self.parseDatosContinentes, method='GET', dont_filter=True)
 				#request.meta['continente'] = continente
@@ -36,6 +41,7 @@ class Clima2Spider(scrapy.Spider):
 		urls = response.css("div.mlistados.mt10 a::attr(href)").getall()
 		for url in urls:
 			if url is not None:
+				logger.info("url pais: {}".format(url))
 				# Construyo las urls uniendo el enlace recogido antes a la dirección en la que estoy
 				url = response.urljoin(url.strip())
 				# Para cada una de esas url, llamo a la funcion parseDatosPaíses para trataar la información que tenemos por cada país
@@ -50,6 +56,7 @@ class Clima2Spider(scrapy.Spider):
 		#Recorro todos los años y voy construyendo las urls que tengo para cada año (no tengo información de todas las estaciones para cada año)
 		for anyo in anyos:
 			if anyo is not None:
+				logger.info("Año: {}".format(anyo))
 				# Construyo las urls uniendo la parte de año a la url inicial
 				anyo = response.urljoin(anyo.strip())
 				# Para cada año, por cada url llamo a la función parseDatosAnyos para tratar la información de cada año.
@@ -62,6 +69,7 @@ class Clima2Spider(scrapy.Spider):
 		urls = response.css("div.mlistados.mt10 a::attr(href)").getall()
 		for url in urls:
 			if url is not None:
+				logger.info("url estacion: {}".format(url))
 				# Construyo las urls uniendo la parte de año a la url inicial
 				url = response.urljoin(url.strip())
 				yield scrapy.Request(url, callback=self.parseDatosEstaciones, method='GET', dont_filter=True)
@@ -104,6 +112,7 @@ class Clima2Spider(scrapy.Spider):
 		latitud = stationValues[6]
 		longitud = stationValues[7]
 		altitud  = stationValues[8]
+		headersClima = ["dia", "T", "TM", "Tm", "SLP", "H", "PP", "VV", "V", "VM", "VG", "RA", "SN", "TS", "FG"]
 		# obtengo todos los registros climatológicos que tengo para esa selección
 		datosClima = np.array(response.css('table.medias.mensuales.numspan td'))
 		# Tengo 15 datos por cada día (incluyendo el día luego de todo lo recuperado lo separo en bloques de 15)
