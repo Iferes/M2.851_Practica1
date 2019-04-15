@@ -47,7 +47,7 @@ class DatosClimaMundialItem(scrapy.Item):
     pais = scrapy.Field()
     estacion = scrapy.Field()
     idEstacion = scrapy.Field()
-    atitud = scrapy.Field()
+    latitud = scrapy.Field()
     longitud = scrapy.Field()
     altitud = scrapy.Field()
     year = scrapy.Field()
